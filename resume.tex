@@ -1,0 +1,851 @@
+% !TeX program = xelatex 
+
+\NeedsTeXFormat{LaTeX2e}
+
+\usepackage{titlesec}
+\usepackage{fontspec}
+\usepackage{color}
+\usepackage[left=0.5in, right=0.5in, top=0.5in, bottom=0.5in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{textcomp}
+\usepackage{hyperref}
+
+
+\setmainfont{Verdana} 
+
+\definecolor{c_cyan}{RGB}{63, 127, 255}
+\definecolor{c_blue}{RGB}{31, 63, 255}
+\definecolor{c_dark_blue}{RGB}{31, 63, 128}
+\definecolor{c_grey}{RGB}{50, 50, 50}
+\definecolor{c_Ren'Py}{RGB}{0, 0, 0}
+\definecolor{c_C}{RGB}{0, 0, 0}
+\definecolor{c_OpenGL}{RGB}{0, 0, 0}
+\definecolor{c_TypeScript}{RGB}{0, 0, 0}
+\definecolor{c_CoffeeScript}{RGB}{0, 0, 0}
+\definecolor{c_JavaScript}{RGB}{0, 0, 0}
+\definecolor{c_Self}{RGB}{0, 0, 0}
+\definecolor{c_Isabelle}{RGB}{0, 0, 0}
+\definecolor{c_SourcePawn}{RGB}{0, 0, 0}
+\definecolor{c_PHP}{RGB}{0, 0, 0}
+\definecolor{c_PureBasic}{RGB}{0, 0, 0}
+\definecolor{c_Visual_Basic}{RGB}{0, 0, 0}
+\definecolor{c_LiveScript}{RGB}{0, 0, 0}
+\definecolor{c_API_Blueprint}{RGB}{0, 0, 0}
+\definecolor{c_Latte}{RGB}{0, 0, 0}
+\definecolor{c_PigLatin}{RGB}{0, 0, 0}
+\definecolor{c_Glyph}{RGB}{0, 0, 0}
+\definecolor{c_MAXScript}{RGB}{0, 0, 0}
+\definecolor{c_ColdFusion}{RGB}{0, 0, 0}
+\definecolor{c_NewLisp}{RGB}{0, 0, 0}
+\definecolor{c_ANTLR}{RGB}{0, 0, 0}
+\definecolor{c_XC}{RGB}{0, 0, 0}
+\definecolor{c_Rouge}{RGB}{0, 0, 0}
+\definecolor{c_IDL}{RGB}{0, 0, 0}
+\definecolor{c_Max}{RGB}{0, 0, 0}
+\definecolor{c_Lasso}{RGB}{0, 0, 0}
+\definecolor{c_BlitzMax}{RGB}{0, 0, 0}
+\definecolor{c_Harbour}{RGB}{0, 0, 0}
+\definecolor{c_SQF}{RGB}{0, 0, 0}
+\definecolor{c_Pure_Data}{RGB}{0, 0, 0}
+\definecolor{c_Rust}{RGB}{0, 0, 0}
+\definecolor{c_Perl6}{RGB}{0, 0, 0}
+\definecolor{c_Eiffel}{RGB}{0, 0, 0}
+\definecolor{c_Unity3D_Asset}{RGB}{0, 0, 0}
+\definecolor{c_Kotlin}{RGB}{0, 0, 0}
+\definecolor{c_Alloy}{RGB}{0, 0, 0}
+\definecolor{c_SuperCollider}{RGB}{0, 0, 0}
+\definecolor{c_PAWN}{RGB}{0, 0, 0}
+\definecolor{c_Opal}{RGB}{0, 0, 0}
+\definecolor{c_Mercury}{RGB}{0, 0, 0}
+\definecolor{c_Grammatical_Framework}{RGB}{0, 0, 0}
+\definecolor{c_AspectJ}{RGB}{0, 0, 0}
+\definecolor{c_Puppet}{RGB}{0, 0, 0}
+\definecolor{c_VHDL}{RGB}{0, 0, 0}
+\definecolor{c_FORTRAN}{RGB}{0, 0, 0}
+\definecolor{c_Game_Maker_Language}{RGB}{0, 0, 0}
+\definecolor{c_J}{RGB}{0, 0, 0}
+\definecolor{c_Verilog}{RGB}{0, 0, 0}
+\definecolor{c_AMPL}{RGB}{0, 0, 0}
+\definecolor{c_Jupyter_Notebook}{RGB}{0, 0, 0}
+\definecolor{c_Assembly}{RGB}{0, 0, 0}
+\definecolor{c_Dogescript}{RGB}{0, 0, 0}
+\definecolor{c_AutoIt}{RGB}{0, 0, 0}
+\definecolor{c_DM}{RGB}{0, 0, 0}
+\definecolor{c_Ruby}{RGB}{0, 0, 0}
+\definecolor{c_EmberScript}{RGB}{0, 0, 0}
+\definecolor{c_Clojure}{RGB}{0, 0, 0}
+\definecolor{c_JSONiq}{RGB}{0, 0, 0}
+\definecolor{c_XQuery}{RGB}{0, 0, 0}
+\definecolor{c_cpp}{RGB}{0, 0, 0}
+\definecolor{c_OpenCV}{RGB}{0, 0, 0}
+\definecolor{c_Nu}{RGB}{0, 0, 0}
+\definecolor{c_X10}{RGB}{0, 0, 0}
+\definecolor{c_KRL}{RGB}{0, 0, 0}
+\definecolor{c_Diff}{RGB}{0, 0, 0}
+\definecolor{c_Dylan}{RGB}{0, 0, 0}
+\definecolor{c_Papyrus}{RGB}{0, 0, 0}
+\definecolor{c_Frege}{RGB}{0, 0, 0}
+\definecolor{c_Gosu}{RGB}{0, 0, 0}
+\definecolor{c_PLSQL}{RGB}{0, 0, 0}
+\definecolor{c_Java}{RGB}{0, 0, 0}
+\definecolor{c_Clean}{RGB}{0, 0, 0}
+\definecolor{c_Objective-J}{RGB}{0, 0, 0}
+\definecolor{c_APL}{RGB}{0, 0, 0}
+\definecolor{c_Handlebars}{RGB}{0, 0, 0}
+\definecolor{c_Scheme}{RGB}{0, 0, 0}
+\definecolor{c_LSL}{RGB}{0, 0, 0}
+\definecolor{c_E}{RGB}{0, 0, 0}
+\definecolor{c_TeX}{RGB}{0, 0, 0}
+\definecolor{c_Prolog}{RGB}{0, 0, 0}
+\definecolor{c_Cirru}{RGB}{0, 0, 0}
+\definecolor{c_FreeMarker}{RGB}{0, 0, 0}
+\definecolor{c_VimL}{RGB}{0, 0, 0}
+\definecolor{c_Fantom}{RGB}{0, 0, 0}
+\definecolor{c_Nit}{RGB}{0, 0, 0}
+\definecolor{c_Tcl}{RGB}{0, 0, 0}
+\definecolor{c_PureScript}{RGB}{0, 0, 0}
+\definecolor{c_ooc}{RGB}{0, 0, 0}
+\definecolor{c_Rebol}{RGB}{0, 0, 0}
+\definecolor{c_ABAP}{RGB}{0, 0, 0}
+\definecolor{c_Hy}{RGB}{0, 0, 0}
+\definecolor{c_LFE}{RGB}{0, 0, 0}
+\definecolor{c_C_Sharp}{RGB}{0, 0, 0}
+\definecolor{c_Web_Ontology_Language}{RGB}{0, 0, 0}
+\definecolor{c_ATS}{RGB}{0, 0, 0}
+\definecolor{c_CSS}{RGB}{0, 0, 0}
+\definecolor{c_Pike}{RGB}{0, 0, 0}
+\definecolor{c_ActionScript}{RGB}{0, 0, 0}
+\definecolor{c_Parrot}{RGB}{0, 0, 0}
+\definecolor{c_Agda}{RGB}{0, 0, 0}
+\definecolor{c_Propeller_Spin}{RGB}{0, 0, 0}
+\definecolor{c_Nimrod}{RGB}{0, 0, 0}
+\definecolor{c_AutoHotkey}{RGB}{0, 0, 0}
+\definecolor{c_Common_Lisp}{RGB}{0, 0, 0}
+\definecolor{c_FLUX}{RGB}{0, 0, 0}
+\definecolor{c_Eagle}{RGB}{0, 0, 0}
+\definecolor{c_Mask}{RGB}{0, 0, 0}
+\definecolor{c_Brainfuck}{RGB}{0, 0, 0}
+\definecolor{c_Erlang}{RGB}{0, 0, 0}
+\definecolor{c_Arc}{RGB}{0, 0, 0}
+\definecolor{c_F#}{RGB}{0, 0, 0}
+\definecolor{c_Lua}{RGB}{0, 0, 0}
+\definecolor{c_Zephir}{RGB}{0, 0, 0}
+\definecolor{c_SaltStack}{RGB}{0, 0, 0}
+\definecolor{c_Python}{RGB}{0, 0, 0}
+\definecolor{c_Clarion}{RGB}{0, 0, 0}
+\definecolor{c_Component_Pascal}{RGB}{0, 0, 0}
+\definecolor{c_Smalltalk}{RGB}{0, 0, 0}
+\definecolor{c_Golo}{RGB}{0, 0, 0}
+\definecolor{c_AGS_Script}{RGB}{0, 0, 0}
+\definecolor{c_Turing}{RGB}{0, 0, 0}
+\definecolor{c_UnrealScript}{RGB}{0, 0, 0}
+\definecolor{c_HTML}{RGB}{0, 0, 0}
+\definecolor{c_Nemerle}{RGB}{0, 0, 0}
+\definecolor{c_Click}{RGB}{0, 0, 0}
+\definecolor{c_Groovy}{RGB}{0, 0, 0}
+\definecolor{c_NetLogo}{RGB}{0, 0, 0}
+\definecolor{c_Elixir}{RGB}{0, 0, 0}
+\definecolor{c_Mirah}{RGB}{0, 0, 0}
+\definecolor{c_Lex}{RGB}{0, 0, 0}
+\definecolor{c_Red}{RGB}{0, 0, 0}
+\definecolor{c_Standard_ML}{RGB}{0, 0, 0}
+\definecolor{c_eC}{RGB}{0, 0, 0}
+\definecolor{c_wisp}{RGB}{0, 0, 0}
+\definecolor{c_Processing}{RGB}{0, 0, 0}
+\definecolor{c_Pascal}{RGB}{0, 0, 0}
+\definecolor{c_Gnuplot}{RGB}{0, 0, 0}
+\definecolor{c_Dart}{RGB}{0, 0, 0}
+\definecolor{c_QML}{RGB}{0, 0, 0}
+\definecolor{c_ASP}{RGB}{0, 0, 0}
+\definecolor{c_nesC}{RGB}{0, 0, 0}
+\definecolor{c_Emacs_Lisp}{RGB}{0, 0, 0}
+\definecolor{c_Volt}{RGB}{0, 0, 0}
+\definecolor{c_RAML}{RGB}{0, 0, 0}
+\definecolor{c_SAS}{RGB}{0, 0, 0}
+\definecolor{c_Arduino}{RGB}{0, 0, 0}
+\definecolor{c_Elm}{RGB}{0, 0, 0}
+\definecolor{c_R}{RGB}{0, 0, 0}
+\definecolor{c_Unified_Parallel_C}{RGB}{0, 0, 0}
+\definecolor{c_Metal}{RGB}{0, 0, 0}
+\definecolor{c_Io}{RGB}{0, 0, 0}
+\definecolor{c_ECL}{RGB}{0, 0, 0}
+\definecolor{c_Factor}{RGB}{0, 0, 0}
+\definecolor{c_Slash}{RGB}{0, 0, 0}
+\definecolor{c_Haxe}{RGB}{0, 0, 0}
+\definecolor{c_SystemVerilog}{RGB}{0, 0, 0}
+\definecolor{c_Matlab}{RGB}{0, 0, 0}
+\definecolor{c_Makefile}{RGB}{0, 0, 0}
+\definecolor{c_Objective-C}{RGB}{0, 0, 0}
+\definecolor{c_Vue}{RGB}{0, 0, 0}
+\definecolor{c_Julia}{RGB}{0, 0, 0}
+\definecolor{c_Omgrofl}{RGB}{0, 0, 0}
+\definecolor{c_NetLinx}{RGB}{0, 0, 0}
+\definecolor{c_Fancy}{RGB}{0, 0, 0}
+\definecolor{c_Slim}{RGB}{0, 0, 0}
+\definecolor{c_Objective-C++}{RGB}{0, 0, 0}
+\definecolor{c_Nix}{RGB}{0, 0, 0}
+\definecolor{c_Oxygene}{RGB}{0, 0, 0}
+\definecolor{c_PogoScript}{RGB}{0, 0, 0}
+\definecolor{c_Racket}{RGB}{0, 0, 0}
+\definecolor{c_NetLinx+ERB}{RGB}{0, 0, 0}
+\definecolor{c_Scala}{RGB}{0, 0, 0}
+\definecolor{c_ColdFusion_CFC}{RGB}{0, 0, 0}
+\definecolor{c_Crystal}{RGB}{0, 0, 0}
+\definecolor{c_Shen}{RGB}{0, 0, 0}
+\definecolor{c_Ioke}{RGB}{0, 0, 0}
+\definecolor{c_OCaml}{RGB}{0, 0, 0}
+\definecolor{c_LookML}{RGB}{0, 0, 0}
+\definecolor{c_Oz}{RGB}{0, 0, 0}
+\definecolor{c_Pan}{RGB}{0, 0, 0}
+\definecolor{c_Swift}{RGB}{0, 0, 0}
+\definecolor{c_NCL}{RGB}{0, 0, 0}
+\definecolor{c_Vala}{RGB}{0, 0, 0}
+\definecolor{c_Boo}{RGB}{0, 0, 0}
+\definecolor{c_Forth}{RGB}{0, 0, 0}
+\definecolor{c_JFlex}{RGB}{0, 0, 0}
+\definecolor{c_Ada}{RGB}{0, 0, 0}
+\definecolor{c_Ragel_in_Ruby_Host}{RGB}{0, 0, 0}
+\definecolor{c_Shell}{RGB}{0, 0, 0}
+\definecolor{c_Squirrel}{RGB}{0, 0, 0}
+\definecolor{c_Stan}{RGB}{0, 0, 0}
+\definecolor{c_Chapel}{RGB}{0, 0, 0}
+\definecolor{c_Perl}{RGB}{0, 0, 0}
+\definecolor{c_Haskell}{RGB}{0, 0, 0}
+\definecolor{c_MTML}{RGB}{0, 0, 0}
+\definecolor{c_D}{RGB}{0, 0, 0}
+\definecolor{c_Go}{RGB}{0, 0, 0}
+\definecolor{c_xBase}{RGB}{0, 0, 0}
+\definecolor{c_edn}{RGB}{0, 0, 0}
+\definecolor{c_LOLCODE}{RGB}{0, 0, 0}
+% \definecolor{c_cyan}{RGB}{63, 127, 255}
+% \definecolor{c_blue}{RGB}{31, 63, 255}
+% \definecolor{c_dark_blue}{RGB}{31, 63, 128}
+% \definecolor{c_grey}{RGB}{75, 75, 75}
+% \definecolor{c_Ren'Py}{RGB}{255,127,127}
+% \definecolor{c_C}{RGB}{85,85,85}
+% \definecolor{c_OpenGL}{RGB}{185,85,85}
+% \definecolor{c_TypeScript}{RGB}{43,116,137}
+% \definecolor{c_CoffeeScript}{RGB}{36,71,118}
+% \definecolor{c_JavaScript}{RGB}{170,149,90}
+% \definecolor{c_Self}{RGB}{5,121,170}
+% \definecolor{c_Isabelle}{RGB}{254,254,0}
+% \definecolor{c_SourcePawn}{RGB}{92,118,17}
+% \definecolor{c_PHP}{RGB}{79,93,149}
+% \definecolor{c_PureBasic}{RGB}{90,105,134}
+% \definecolor{c_Visual_Basic}{RGB}{148,93,183}
+% \definecolor{c_LiveScript}{RGB}{73,152,134}
+% \definecolor{c_API_Blueprint}{RGB}{42,204,168}
+% \definecolor{c_Latte}{RGB}{168,255,151}
+% \definecolor{c_PigLatin}{RGB}{252,215,222}
+% \definecolor{c_Glyph}{RGB}{228,204,152}
+% \definecolor{c_MAXScript}{RGB}{0,166,166}
+% \definecolor{c_ColdFusion}{RGB}{237,44,214}
+% \definecolor{c_NewLisp}{RGB}{135,174,215}
+% \definecolor{c_ANTLR}{RGB}{157,195,255}
+% \definecolor{c_XC}{RGB}{153,218,7}
+% \definecolor{c_Rouge}{RGB}{204,0,136}
+% \definecolor{c_IDL}{RGB}{163,82,47}
+% \definecolor{c_Max}{RGB}{196,167,156}
+% \definecolor{c_Lasso}{RGB}{153,153,153}
+% \definecolor{c_BlitzMax}{RGB}{205,100,0}
+% \definecolor{c_Harbour}{RGB}{14,96,227}
+% \definecolor{c_SQF}{RGB}{63,63,63}
+% \definecolor{c_Pure_Data}{RGB}{145,222,121}
+% \definecolor{c_Rust}{RGB}{222,165,132}
+% \definecolor{c_Perl6}{RGB}{0,0,251}
+% \definecolor{c_Eiffel}{RGB}{148,109,87}
+% \definecolor{c_Unity3D_Asset}{RGB}{171,105,161}
+% \definecolor{c_Kotlin}{RGB}{241,142,51}
+% \definecolor{c_Alloy}{RGB}{100,200,0}
+% \definecolor{c_SuperCollider}{RGB}{70,57,11}
+% \definecolor{c_PAWN}{RGB}{219,178,132}
+% \definecolor{c_Opal}{RGB}{247,237,224}
+% \definecolor{c_Mercury}{RGB}{255,43,43}
+% \definecolor{c_Grammatical_Framework}{RGB}{121,170,122}
+% \definecolor{c_AspectJ}{RGB}{169,87,176}
+% \definecolor{c_Puppet}{RGB}{48,43,109}
+% \definecolor{c_VHDL}{RGB}{173,178,203}
+% \definecolor{c_FORTRAN}{RGB}{77,65,177}
+% \definecolor{c_Game_Maker_Language}{RGB}{143,178,0}
+% \definecolor{c_J}{RGB}{158,237,255}
+% \definecolor{c_Verilog}{RGB}{178,183,248}
+% \definecolor{c_AMPL}{RGB}{230,239,187}
+% \definecolor{c_Jupyter_Notebook}{RGB}{218,91,11}
+% \definecolor{c_Assembly}{RGB}{110,76,19}
+% \definecolor{c_Dogescript}{RGB}{204,167,96}
+% \definecolor{c_AutoIt}{RGB}{28,53,82}
+% \definecolor{c_DM}{RGB}{68,114,101}
+% \definecolor{c_Ruby}{RGB}{112,21,22}
+% \definecolor{c_EmberScript}{RGB}{255,244,243}
+% \definecolor{c_Clojure}{RGB}{219,88,85}
+% \definecolor{c_JSONiq}{RGB}{64,212,126}
+% \definecolor{c_XQuery}{RGB}{82,50,231}
+% \definecolor{c_cpp}{RGB}{243,75,125}
+% \definecolor{c_OpenCV}{RGB}{243,125,75}
+% \definecolor{c_Nu}{RGB}{201,223,64}
+% \definecolor{c_X10}{RGB}{75,107,239}
+% \definecolor{c_KRL}{RGB}{40,67,31}
+% \definecolor{c_Diff}{RGB}{136,221,221}
+% \definecolor{c_Dylan}{RGB}{108,97,110}
+% \definecolor{c_Papyrus}{RGB}{102,0,204}
+% \definecolor{c_Frege}{RGB}{0,202,254}
+% \definecolor{c_Gosu}{RGB}{130,147,127}
+% \definecolor{c_PLSQL}{RGB}{218,216,216}
+% \definecolor{c_Java}{RGB}{176,114,25}
+% \definecolor{c_Clean}{RGB}{63,133,175}
+% \definecolor{c_Objective-J}{RGB}{255,12,90}
+% \definecolor{c_APL}{RGB}{90,129,100}
+% \definecolor{c_Handlebars}{RGB}{1,169,214}
+% \definecolor{c_Scheme}{RGB}{30,74,236}
+% \definecolor{c_LSL}{RGB}{61,153,112}
+% \definecolor{c_E}{RGB}{204,206,53}
+% \definecolor{c_TeX}{RGB}{61,97,23}
+% \definecolor{c_Prolog}{RGB}{116,40,60}
+% \definecolor{c_Cirru}{RGB}{204,204,255}
+% \definecolor{c_FreeMarker}{RGB}{0,80,178}
+% \definecolor{c_VimL}{RGB}{25,159,75}
+% \definecolor{c_Fantom}{RGB}{219,222,213}
+% \definecolor{c_Nit}{RGB}{0,153,23}
+% \definecolor{c_Tcl}{RGB}{228,204,152}
+% \definecolor{c_PureScript}{RGB}{29,34,45}
+% \definecolor{c_ooc}{RGB}{176,183,126}
+% \definecolor{c_Rebol}{RGB}{53,138,91}
+% \definecolor{c_ABAP}{RGB}{232,39,75}
+% \definecolor{c_Hy}{RGB}{119,144,178}
+% \definecolor{c_LFE}{RGB}{0,66,0}
+% \definecolor{c_C_Sharp}{RGB}{23,134,0}
+% \definecolor{c_Web_Ontology_Language}{RGB}{156,201,221}
+% \definecolor{c_ATS}{RGB}{26,198,32}
+% \definecolor{c_CSS}{RGB}{86,61,124}
+% \definecolor{c_Pike}{RGB}{0,83,144}
+% \definecolor{c_ActionScript}{RGB}{136,43,15}
+% \definecolor{c_Parrot}{RGB}{243,202,10}
+% \definecolor{c_Agda}{RGB}{49,86,101}
+% \definecolor{c_Propeller_Spin}{RGB}{127,162,167}
+% \definecolor{c_Nimrod}{RGB}{55,119,91}
+% \definecolor{c_AutoHotkey}{RGB}{101,148,185}
+% \definecolor{c_Common_Lisp}{RGB}{63,182,139}
+% \definecolor{c_FLUX}{RGB}{136,204,255}
+% \definecolor{c_Eagle}{RGB}{129,76,5}
+% \definecolor{c_Mask}{RGB}{249,119,50}
+% \definecolor{c_Brainfuck}{RGB}{47,37,48}
+% \definecolor{c_Erlang}{RGB}{184,57,152}
+% \definecolor{c_Arc}{RGB}{170,42,254}
+% \definecolor{c_F#}{RGB}{184,69,252}
+% \definecolor{c_Lua}{RGB}{0,0,128}
+% \definecolor{c_Zephir}{RGB}{17,143,158}
+% \definecolor{c_SaltStack}{RGB}{100,100,100}
+% \definecolor{c_Python}{RGB}{53,114,165}
+% \definecolor{c_Clarion}{RGB}{219,144,30}
+% \definecolor{c_Component_Pascal}{RGB}{176,206,78}
+% \definecolor{c_Smalltalk}{RGB}{89,103,6}
+% \definecolor{c_Golo}{RGB}{136,86,42}
+% \definecolor{c_AGS_Script}{RGB}{185,217,255}
+% \definecolor{c_Turing}{RGB}{69,247,21}
+% \definecolor{c_UnrealScript}{RGB}{165,76,77}
+% \definecolor{c_HTML}{RGB}{228,75,35}
+% \definecolor{c_Nemerle}{RGB}{61,60,110}
+% \definecolor{c_Click}{RGB}{228,230,243}
+% \definecolor{c_Groovy}{RGB}{230,159,86}
+% \definecolor{c_NetLogo}{RGB}{255,99,117}
+% \definecolor{c_Elixir}{RGB}{110,74,126}
+% \definecolor{c_Mirah}{RGB}{199,169,56}
+% \definecolor{c_Lex}{RGB}{219,202,0}
+% \definecolor{c_Red}{RGB}{238,0,0}
+% \definecolor{c_Standard_ML}{RGB}{220,86,109}
+% \definecolor{c_eC}{RGB}{145,57,96}
+% \definecolor{c_wisp}{RGB}{117,130,209}
+% \definecolor{c_Processing}{RGB}{0,150,216}
+% \definecolor{c_Pascal}{RGB}{176,206,78}
+% \definecolor{c_Gnuplot}{RGB}{240,169,240}
+% \definecolor{c_Dart}{RGB}{0,180,171}
+% \definecolor{c_QML}{RGB}{68,165,28}
+% \definecolor{c_ASP}{RGB}{106,64,253}
+% \definecolor{c_nesC}{RGB}{148,176,199}
+% \definecolor{c_Emacs_Lisp}{RGB}{192,101,219}
+% \definecolor{c_Volt}{RGB}{31,31,31}
+% \definecolor{c_RAML}{RGB}{119,217,251}
+% \definecolor{c_SAS}{RGB}{179,73,54}
+% \definecolor{c_Arduino}{RGB}{189,121,209}
+% \definecolor{c_Elm}{RGB}{96,181,204}
+% \definecolor{c_R}{RGB}{25,140,231}
+% \definecolor{c_Unified_Parallel_C}{RGB}{78,54,23}
+% \definecolor{c_Metal}{RGB}{143,20,233}
+% \definecolor{c_Io}{RGB}{169,24,141}
+% \definecolor{c_ECL}{RGB}{138,18,103}
+% \definecolor{c_Factor}{RGB}{99,103,70}
+% \definecolor{c_Slash}{RGB}{0,126,255}
+% \definecolor{c_Haxe}{RGB}{223,121,0}
+% \definecolor{c_SystemVerilog}{RGB}{218,225,194}
+% \definecolor{c_Matlab}{RGB}{187,146,172}
+% \definecolor{c_Makefile}{RGB}{66,120,25}
+% \definecolor{c_Objective-C}{RGB}{67,142,255}
+% \definecolor{c_Vue}{RGB}{44,62,80}
+% \definecolor{c_Julia}{RGB}{162,112,186}
+% \definecolor{c_Omgrofl}{RGB}{202,187,255}
+% \definecolor{c_NetLinx}{RGB}{10,160,255}
+% \definecolor{c_Fancy}{RGB}{123,157,180}
+% \definecolor{c_Slim}{RGB}{255,143,119}
+% \definecolor{c_Objective-C++}{RGB}{104,102,251}
+% \definecolor{c_Nix}{RGB}{126,126,255}
+% \definecolor{c_Oxygene}{RGB}{205,208,227}
+% \definecolor{c_PogoScript}{RGB}{216,0,116}
+% \definecolor{c_Racket}{RGB}{34,34,143}
+% \definecolor{c_NetLinx+ERB}{RGB}{116,127,170}
+% \definecolor{c_Scala}{RGB}{220,50,47}
+% \definecolor{c_ColdFusion_CFC}{RGB}{237,44,214}
+% \definecolor{c_Crystal}{RGB}{119,103,145}
+% \definecolor{c_Shen}{RGB}{18,15,20}
+% \definecolor{c_Ioke}{RGB}{7,129,147}
+% \definecolor{c_OCaml}{RGB}{59,225,51}
+% \definecolor{c_LookML}{RGB}{101,43,129}
+% \definecolor{c_Oz}{RGB}{250,183,56}
+% \definecolor{c_Pan}{RGB}{204,0,0}
+% \definecolor{c_Swift}{RGB}{255,172,69}
+% \definecolor{c_NCL}{RGB}{40,67,31}
+% \definecolor{c_Vala}{RGB}{251,229,205}
+% \definecolor{c_Boo}{RGB}{212,190,193}
+% \definecolor{c_Forth}{RGB}{52,23,8}
+% \definecolor{c_JFlex}{RGB}{219,202,0}
+% \definecolor{c_Ada}{RGB}{2,248,140}
+% \definecolor{c_Ragel_in_Ruby_Host}{RGB}{157,82,0}
+% \definecolor{c_Shell}{RGB}{137,224,81}
+% \definecolor{c_Squirrel}{RGB}{128,0,0}
+% \definecolor{c_Stan}{RGB}{178,1,29}
+% \definecolor{c_Chapel}{RGB}{141,198,63}
+% \definecolor{c_Perl}{RGB}{2,152,195}
+% \definecolor{c_Haskell}{RGB}{41,181,68}
+% \definecolor{c_MTML}{RGB}{183,225,244}
+% \definecolor{c_D}{RGB}{186,89,94}
+% \definecolor{c_Go}{RGB}{55,94,171}
+% \definecolor{c_xBase}{RGB}{64,58,64}
+% \definecolor{c_edn}{RGB}{219,88,85}
+% \definecolor{c_LOLCODE}{RGB}{204,153,0}
+
+% \definecolor{c_C}{RGB}{85, 85, 85}
+% \definecolor{c_Java}{RGB}{176, 114, 25}
+% \definecolor{c_Arduino}{RGB}{189, 121, 209}
+% \definecolor{c_JavaScript}{RGB}{155, 135, 69}
+% \definecolor{c_C++}{RGB}{243, 75, 125}
+% \definecolor{c_TeX}{RGB}{61, 97, 23}
+% \definecolor{c_Haxe}{RGB}{223, 121, 0}
+% \definecolor{c_Python}{RGB}{53, 114, 165}
+% \definecolor{c_Processing}{RGB}{0, 150, 216}
+% \definecolor{c_C_Sharp}{RGB}{23, 134, 0}
+% \definecolor{c_QML}{RGB}{68, 165, 28}
+% \definecolor{c_ActionScript}{RGB}{136, 43, 15}
+
+\def\labelitemi{\color{c_cyan}\textbullet}
+
+\pagenumbering{gobble}
+
+\newif\ifpaper
+
+\newcommand{\link}[2]{\href{#2}{\color{c_cyan}\bf\underline{#1}}}
+
+\newcommand{\nopaper}[2]{\ifpaper #2 \else #1 \fi}
+
+\newcommand{\sep}{{\color{c_dark_blue}|} }
+
+\newcommand{\headline}[1]{
+	{\LARGE\scshape{#1}}
+	\leavevmode
+}
+
+\newcommand{\address}[3]{
+	{\textcolor{c_grey}{#1} {\large\textperiodcentered} \textcolor{c_grey}{#2} {\large\textperiodcentered} \textcolor{c_grey}{#3}}
+}
+
+\titlespacing*{\section}
+{0pt}{5pt}{5pt}
+\titlespacing*{\subsection}
+{0pt}{3pt}{3pt}
+
+\titleformat{\section}          % Customise the \section command 
+	{\Large\scshape\raggedright} % Make the \section headers large (\Large),
+								 % small capitals (\scshape) and left aligned (\raggedright)	
+	{\textcolor{c_cyan}{|}}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
+	{}                           % Can be used to insert code before the heading	
+	[\titlerule]                 % Inserts a horizontal line after the heading
+
+\titleformat{\subsection}           % Customise the \subsection command 
+	{\bf\normalsize} % Make the \section headers large (\Large),
+	% small capitals (\scshape) and left aligned (\raggedright)	
+	{{\color{c_dark_blue}- }}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
+	{}                           % Can be used to insert code before the heading	
+	[]                 % Inserts a horizontal line after the heading
+	
+\newcommand{\datedsection}[2]{%
+	\section[#1]{#1 \hfill \textcolor{c_dark_blue}{#2}}%
+}
+
+\newcommand{\datedsubsection}[2]{%
+	\subsection[#1]{#1 \hfill \textcolor{c_dark_blue}{#2}}%	
+}
+
+\newcommand{\dateditem}[2]{%
+	{#1 \hfill \textcolor{c_dark_blue}{#2}}%	
+}
+
+\newcommand{\dtext}[1]{
+	{\footnotesize\textcolor{c_grey}{#1}}
+}
+
+\newcommand{\qna}[2]{
+	{\normalsize #1}
+	\begin{itemize}
+		\item 
+		#2
+	\end{itemize}
+}
+
+\renewcommand{\baselinestretch}{1.0}
+
+\newcommand{\resume}[1]{
+	\small
+	\noindent
+	{
+	\normalsize
+	\renewcommand{\arraystretch}{1.2}
+	%% \begin{tabular}{cc}
+	%%   \includegraphics[width=0.75cm]{logo.jpg}
+	%%   & \headline{Ze Ming ({\color{c_dark_blue}Tommy}) Xiang}\\
+	%% \end{tabular}
+    \headline{Ze Ming ({\color{c_dark_blue}Tommy}) Xiang}
+	}
+	{
+	\color{c_grey}
+	\small
+	\renewcommand{\arraystretch}{1.1}
+	%\begin{tabular}{||l@{\hskip 0.05in}@{\color{c_dark_blue}|}l}
+    \hfill
+	\begin{tabular}{r}
+		% University of Toronto \sep Computer Science 2T0 \\
+		% \nopaper {
+			% \link{GitHub}{https://github.com/TommyX12} \sep \link{Facebook}{https://www.facebook.com/tommy.xiang.5}\\
+		% }
+		% {
+			% \color{c_dark_blue}{\textbf{github.com/TommyX12}} \\
+		% }
+		\link{github.com/TommyX12}{https://github.com/TommyX12} \\ % \sep \link{Facebook}{https://www.facebook.com/tommy.xiang.5}\\
+		\address{30 Elkpath Ave}{Toronto}{ON M2L 2W1}\\
+		tommy.xiang@mail.utoronto.ca \sep (647)-968-4242 \\
+		% {\color{c_dark_blue}tommyx}058@gmail.com \sep (647)-968-4242 \\
+	\end{tabular}
+	}
+	
+	% \section{Objective}
+	% Dedicated and motivated computer science student with innovative mindset seeking to apply 3+ years of software development passion and experience #1.
+	
+	% \section{Qualifications}
+	% {
+	% \setlength\multicolsep{0pt}
+	% \begin{multicols}{2}
+		% \begin{itemize}
+			% \item 
+		% \end{itemize}
+	% \end{multicols}
+	% }
+	\section{Professional Experience}
+	{
+	\setlength\multicolsep{0pt}
+    \begin{itemize}
+        \item  \dateditem{\textbf{Google LLC}, \textit{Software Engineering Intern, Google Docs Team}}{2018 Summer}
+        \\
+        \dtext{
+            - Released completed feature to Google Docs Android, reaching millions of users
+        }
+
+        \item  \dateditem{\textbf{University of Toronto}, \textit{Research Assistant}}{2017 Summer}
+        \\
+        \dtext{
+            - Assisted CS Professor with educational game design research,  written report on data analysis
+            \\
+            - Design and developed educational game Deadlook\nopaper{ (\link{Link}{https://github.com/TommyX12/bit-miners})}{}, constructed survey, gathered data from 20+ testers
+            \\
+            - Implemented graphical block scripting interface and compiler in Unity \textcolor{c_C_Sharp}{\textbf{C\#}}, using embedded JS engine
+            \\
+            - Received A+ evaluation from supervisor: Prof. Steve Engels. Featured on UofT News \nopaper{(\link{Link}{https://www.utoronto.ca/news/these-video-games-trick-elementary-and-high-school-students-learning-stem})}{}
+        }
+    \end{itemize}
+	}
+	
+	\section{Education}
+	% \datedsubsection{University of Toronto St.George Campus}{2016 - present}
+	\datedsubsection{University of Toronto, Honors B.Sc, Computer Science Specialist}{Class of 2020}
+	\begin{itemize}
+		% - Enrolled in Computer Science Specialist Program - Undergraduate
+		% - Fast-Tracking - Earlier Expected Graduation Date: April 2019
+		% - SGPA: 4.0, CGPA: 3.97
+        \item Dean's List Scholar, President's Entrance Scholarship
+		{
+		\footnotesize
+		\setlength\multicolsep{3pt}
+		\begin{multicols}{2}
+            \item  Finished Courses - \textbf{GPA: 3.97}:
+            \\
+			- Enriched Introduction to the Theory of Computation
+            \\
+			\dtext{\,\,\,\,- Class Average: 70, Final Mark: 98}
+			\\
+            - Neural Networks and Machine Learning
+			\\
+			% - Software Design
+            - Natural Language Computing 
+            \item  Current Courses:
+            \\
+            - Introduction to Visual Computing
+            \\
+            - Machine Learning and Data Mining
+            \\
+            - Computer Graphics
+            \\
+            - Statistics for Computer Scientists
+		\end{multicols}
+		}
+	\end{itemize}
+	% \datedsubsection{York Mills Collegiate Institute}{2013 - 2016}
+	% SP LIST(spacing = None)
+		% - Graduated with a 95\% average
+		% -
+		% Achieved perfect final mark in high school Computer Science course from grade 10-12
+		% % -
+		% % Admitted to University of Waterloo Software Engineering and University of Toronto Computer Engineering
+
+	\section{Skills}
+	{
+    \footnotesize
+    \begin{itemize} \setlength\itemsep{0pt}
+    \item
+        Proficient in:
+        \textbf{Python}, 
+        \textbf{C}/\textbf{C++}, 
+        \textbf{C\#}/\textbf{Java}, 
+        \textbf{HTML}, 
+        \textbf{CSS}, 
+        \textbf{JavaScript}. 
+        %% \textcolor{c_ActionScript}{ActionScript}.
+        Familar with:
+        \textbf{TypeScript},
+        \textbf{QML},
+        \textbf{Haxe}, 
+        \textbf{SQL}.
+
+        % - Have knowledge in:
+            % \textcolor{c_Matlab}{MATLAB}.
+            % \textcolor{c_OpenGL}{OpenGL}, 
+            % \textcolor{c_OpenCV}{OpenCV}, 
+            % \textcolor{c_PHP}{PHP}, 
+            % \textcolor{c_Arduino}{Arduino},
+            % \textcolor{c_VimL}{VimScript}.
+
+        % - Creative thinking and logical reasoning skills
+
+        % - Over 3 years of experience in modular video game \& software design
+
+      \item
+        Frameworks: Node.js, Express, Angular 2, Ionic, Qt Quick, Vue.js, PyTorch, OpenFL, Google Closure Library.
+
+      \item
+        Tools: Linux, Vim, Emacs, Git, Qt Creator, Photoshop, Flash Professional, Unity3D, Microsoft Office.
+
+        % - Version Control: {Git}
+
+        % - Software Proficiency: {Photoshop, Flash Professional, Unity3D, Cryengine, Microsoft Office}
+
+        % - Strong passion in software development
+
+        % - \nopaper{(\link{Link}{https://soundcloud.com/tommy-xiang})}{} Orchestral composition
+    \end{itemize}
+	}
+	% \section{Accomplishments}
+	% \section{Work Related Experiences}
+	\section{Personal Projects}
+	{
+	\setlength\multicolsep{0pt}
+	\begin{multicols}{2}
+		\begin{itemize}
+			% TODO add a link here
+			\item  \dateditem{\textbf{Time Management App}}{2017 - present}
+				\\
+			\dtext{
+				- Implemented rigorous time-management hybrid app using \textcolor{c_HTML}{HTML}, \textcolor{c_CSS}{CSS}, \textcolor{c_TypeScript}{TypeScript}, Angular 2 and Ionic, with automatic scheduling and reward system.
+				\\
+				- Designed greedy algorithm to achieve real-time planning up to 365 days into the future
+			}
+			
+			% - \dateditem{ \textbf{Life++}\nopaper{(\link{Link}{https://github.com/TommyX12/lpp})}{}}{2016 - present}
+				% \\
+			% \dtext{
+				% - Implemented rigorous time-management solution in \textcolor{c_cpp}{C++}, \textcolor{c_QML}{QML} with automatic scheduling
+				% \\
+				% - Designed greedy algorithm to achieve real-time planning up to 365 days into the future
+			% }
+
+			%% \item  \dateditem{ \textbf{Block Buster}\nopaper{(\link{Link}{https://itunes.apple.com/us/app/id1071095727})}{}}{2015}
+			%% \\
+			%% \dtext{
+			%% 	- Developed cross-platform side-scrolling arcade game in \textcolor{c_ActionScript}{ActionScript 3.0} using Adobe AIR during high school
+			%% 	\\
+			%% 	- 400 plays in 1 month on high school arcade machine
+			%% }
+
+			\item  \dateditem{ \textbf{Neuro-evolution Demo}\nopaper{(\link{Link}{https://github.com/TommyX12/Neuroevolution-test})}{}}{2016}
+			\\
+			\dtext{
+				- Implemented neural network with evolutionary algorithm in \textcolor{c_cpp}{C++} using SFML framework during high school
+				\\
+				- Successfully trained simulated ants to seek food by learning
+			}
+
+			\vfill\null
+			\columnbreak
+
+			\item  \dateditem{ \textbf{TensorBuilder}\nopaper{(\link{Link}{https://github.com/TommyX12/tensorbuilder})}{}}{2017}
+				\\
+			\dtext{
+				- Implemented a GUI editor for TensorFlow\texttrademark \,
+				  in \textcolor{c_QML}{QML} and \textcolor{c_JavaScript}{JavaScript} using Qt
+				% \\
+				% - Written graph-to-python compiler for easy execution
+			}
+
+			\item  \dateditem{ \textbf{Cellular}\nopaper{(\link{Link}{https://drive.google.com/file/d/0Bxp0NufEQ_YkTEVNTkJadG9IYVk/view?usp=sharing})}{}}{2015 - present}
+			\\
+			\dtext{
+				% - Procedural 2D action/adventure/strategy game with AAA post-processing shaders
+				- Designed and developed procedural 2D action / adventure game in Unity \textcolor{c_C_Sharp}{C\#} and \textcolor{c_Haxe}{Haxe}
+				\\
+				- Implemented procedural generation as well as culling algorithm to support seamless map with 65536+ tiles
+				\\
+				- 1st place in UofT Game-Making Deathmatch 2017
+			}
+			
+			% - \dateditem{ HackSandbox.com\nopaper{(\link{Link}{http://hacksandbox.com})}{}}{2017}
+				% \\
+			% \dtext{
+				% - Website for easy game creation and sharing.
+				% \\
+				% - Role: game engine developer, sample game creator
+				% \\
+				% - Language: \textcolor{c_Java}{Java}
+			% }
+
+			% - \dateditem{ \textbf{Up from the Ground}\nopaper{(\link{Link}{http://steamcommunity.com/sharedfiles/filedetails/?id=341346116})}{}}{2013 - 2015}
+			% \\
+			% \dtext{
+				% - Designed and developed 2D action / adventure space shooter game in \textcolor{c_ActionScript}{ActionScript 3.0} during high school
+				% \\
+				% - Written high-standard post-processing shaders
+			% }
+		\end{itemize}
+	\end{multicols}
+	}
+	
+	\vspace{10pt}
+	{
+	\footnotesize
+	\setlength\multicolsep{0pt}
+	\begin{multicols}{2}
+		\section{Awards and Contributions}
+		\begin{itemize}
+			\item  \dateditem{1st Place - Bloomberg Codecon UofT}{2017}
+			\item  \dateditem{2nd Place - Microsoft Code Competition UofT}{2017}
+			\\
+			\dtext{
+				- Solved one of the hardest problem
+			}
+
+			\item  \dateditem{2nd Best Accuracy - (National) USC Competition}{2017}
+			\\
+			\dtext{
+				% - Contribution: a geo-locator tool developed on-the-spot
+				- Developed geo-locator tool for drone mission
+			}
+
+			\item  \dateditem{1st Overall - UofT Game-Making Deathmatch}{2017}
+			\\
+			\dtext{
+				- Best Technical Achievement Award
+				\\
+				- Judges recommended commercial release
+			}
+
+			% - \dateditem{3rd Place - UTRA Sumo Robot Competition}{2017}
+
+			\item  \dateditem{ Silver Medalist - \\ (National) Canadian Computing Olympiad\nopaper{(\link{Link}{http://cemc.uwaterloo.ca/contests/past_contests/CCOResults.pdf})}{}}{2016}
+
+			%% \item  \dateditem{Silver Division Winner - DMCI Programming Gala}{2016}
+
+			\item  \dateditem{3rd Place - Big Data Challenge}{2016}
+			\\
+			\dtext{
+				-  Journal Published on STEM Fellowship
+				% - Project: Relevance of Emergency Requests and Emergency Station Placement
+				% \\
+				% - Role: team leader, programmer; Language: \textcolor{c_Python}{Python}
+			}
+
+			%% \item  \dateditem{School Champion -\\Canadian Open Mathematics Challenge}{2015 - 2016}
+
+			%% \item  \dateditem{Gold Medalist - Toronto Science Fair}{2015}
+			% \\
+			% \dtext{
+				% - Project: Ultrasonic Mapping System
+				% \\
+				% - Role: designer, programmer; Language: \textcolor{c_Java}{Java}(Processing), \textcolor{c_cpp}{C++}(Arduino)
+			% }
+
+			% - \dateditem{School Champion - Canadian Computing Competition Senior Division}{2015}
+		%% \end{itemize}
+		%% \subsection{Clubs}
+		%% \begin{itemize}
+			\item  \dateditem{Vision Subdivision Lead of\\University of Toronto Aerospace Team:\\Aerial Robotics division}{2016 - present}
+
+			\item  \dateditem{Co-President of \\ Game Design and Development Club}{2016 - present}
+
+			%% \item  \dateditem{University of Toronto Robotics Association}{2016}
+
+			%% \item  \dateditem{Founder and instructor of YMCI Game Dev Club}{2015}
+
+			%% \item  \dateditem{Lead instructor of YMCI Programming Club}{2014 - 2016}
+		\end{itemize}
+		
+		\vfill\null
+		\columnbreak
+		
+		\section{Course Projects}
+		
+		\begin{itemize}
+			\item \dateditem{\textbf{Machine Translator}}{2018}
+				\\
+			\dtext{
+				- Written Python application to translate text across different languages, using smoothed n-gram model
+				\\
+				- Applied IBM-1 alignment model, evaluates with BLEU
+			}
+			\item \dateditem{\textbf{Emoji Style-Transfer}}{2018}
+				\\
+			\dtext{
+				- Implemented CycleGAN, a Deep Convolutional Generative Adversarial Network (DCGAN) in \textcolor{c_Python}{PyTorch}
+				\\
+				- Performs unpaired style-transfer between Windows and iOS emoji.
+			}
+			\item  \dateditem{ \textbf{ShareSchedule}\nopaper{(\link{Link}{https://shareschedule.herokuapp.com})}{}}{2017}
+				\\
+			\dtext{
+				- Developed vanilla JS website allowing intelligent time table planning for UofT students, with the ability to see Facebook friends' schedules
+				\\
+				- Written RESTful API backend and backtracking algorithm in \textcolor{c_JavaScript}{JavaScript} to automatically solve for conflict-free schedules
+			}
+		\end{itemize}
+	\end{multicols}
+			
+	}
+}
+
+% http://www.tug.dk/FontCatalogue/seriffonts.html
+% https://www.sharelatex.com/blog/2013/06/28/how-to-write-a-latex-class-file-and-design-your-own-cv.html
