@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6630 64-bit) (preloaded format=xelatex 2018.7.28)  29 JUL 2018 02:01
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6630 64-bit) (preloaded format=xelatex 2018.7.28)  29 JUL 2018 19:26
 entering extended mode
 **./main.tex
 (main.tex
@@ -961,11 +961,10 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 10.
-
 [1
 
 ]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 10.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 10.
  (main.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 10.
@@ -973,12 +972,12 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 10.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 10.
  ) 
 Here is how much of TeX's memory you used:
- 20172 strings out of 427836
- 378903 string characters out of 3152479
- 499693 words of memory out of 3000000
- 24007 multiletter control sequences out of 15000+200000
+ 20174 strings out of 427836
+ 378927 string characters out of 3152479
+ 499683 words of memory out of 3000000
+ 24009 multiletter control sequences out of 15000+200000
  536098 words of font info for 66 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
- 41i,9n,66p,10429b,456s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,9n,66p,10429b,454s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on main.pdf (1 page).

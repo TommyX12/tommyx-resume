@@ -438,9 +438,13 @@
 % \definecolor{c_QML}{RGB}{68, 165, 28}
 % \definecolor{c_ActionScript}{RGB}{136, 43, 15}
 
+\definecolor{c_colrule}{RGB}{100, 100, 100}
+
 \def\labelitemi{\color{c_cyan}\textbullet}
 
 \pagenumbering{gobble}
+
+\renewcommand{\columnseprulecolor}{\color{c_colrule}}
 
 \newif\ifpaper
 
@@ -483,11 +487,15 @@
 }
 
 \newcommand{\datedsubsection}[2]{%
-	\subsection[#1]{#1 \hfill \textcolor{c_dark_blue}{#2}}%	
+	\subsection[#1]{#1 \hfill #2}%	
 }
 
 \newcommand{\dateditem}[2]{%
-	{#1 \hfill \textcolor{c_dark_blue}{#2}}%	
+	{#1 \hfill #2}%
+}
+
+\newcommand{\techitem}[2]{%
+	{#1 \hfill #2}%
 }
 
 \newcommand{\dtext}[1]{
@@ -552,21 +560,28 @@
 	\section{Professional Experience}
 	{
 	\setlength\multicolsep{0pt}
+	\vspace{2pt}
     \begin{itemize}
         \item  \dateditem{\textbf{Google LLC}, \textit{Software Engineering Intern, Google Docs Team}}{2018 Summer}
         \\
         \dtext{
-            - Released completed feature to Google Docs Android, reaching millions of users
+            - Implemented MVC structured, accessibility-friendly user interface for layout formatting for Google Docs Android
+            \\
+            - Discovered and proposed solution for flaws in code base vulnerable to potentially significant decrease in typing performance
+            \\
+            - Released completed feature to Google Docs Android, reaching over 100 million users
+            \\
+            - Technologies: \textcolor{c_JavaScript}{JavaScript}, \textcolor{c_Java}{Java + Android}, \textcolor{c_JavaScript}{Google Closure},  {Bazel}
         }
 
         \item  \dateditem{\textbf{University of Toronto}, \textit{Research Assistant}}{2017 Summer}
         \\
         \dtext{
-            - Assisted CS Professor with educational game design research,  written report on data analysis
+            - Assisted CS Professor with educational game design research,  written report on effective game design elements
             \\
-            - Design and developed educational game Deadlook\nopaper{ (\link{Link}{https://github.com/TommyX12/bit-miners})}{}, constructed survey, gathered data from 20+ testers
+            - Design and developed educational game Deadlock\nopaper{ (\link{Link}{https://github.com/TommyX12/bit-miners})}{}, constructed survey, gathered data from 20+ testers
             \\
-            - Implemented graphical block scripting interface and compiler in Unity \textcolor{c_C_Sharp}{\textbf{C\#}}, using embedded JS engine
+            - Implemented in-game graphical block scripting interface and compiler in Unity \textcolor{c_C_Sharp}{\textbf{C\#}}, using embedded JS engine
             \\
             - Received A+ evaluation from supervisor: Prof. Steve Engels. Featured on UofT News \nopaper{(\link{Link}{https://www.utoronto.ca/news/these-video-games-trick-elementary-and-high-school-students-learning-stem})}{}
         }
@@ -574,7 +589,7 @@
 	}
 	
 	\section{Education}
-	% \datedsubsection{University of Toronto St.George Campus}{2016 - present}
+	% \datedsubsection{University of Toronto St.George Campus}{2016 - Present}
 	\datedsubsection{University of Toronto, Honors B.Sc, Computer Science Specialist}{Class of 2020}
 	\begin{itemize}
 		% - Enrolled in Computer Science Specialist Program - Undergraduate
@@ -620,19 +635,21 @@
     \footnotesize
     \begin{itemize} \setlength\itemsep{0pt}
     \item
-        Proficient in:
-        \textbf{Python}, 
-        \textbf{C}/\textbf{C++}, 
-        \textbf{C\#}/\textbf{Java}, 
-        \textbf{HTML}, 
-        \textbf{CSS}, 
-        \textbf{JavaScript}. 
+        \textbf{Languages}:
+        Python, 
+        C/C++, 
+        C\#/Java, 
+        HTML, 
+        CSS, 
+        JavaScript,
         %% \textcolor{c_ActionScript}{ActionScript}.
-        Familar with:
-        \textbf{TypeScript},
-        \textbf{QML},
-        \textbf{Haxe}, 
-        \textbf{SQL}.
+        TypeScript,
+        QML,
+        Haxe, 
+        SQL,
+        Verilog,
+        Bash,
+        Emacs Lisp.
 
         % - Have knowledge in:
             % \textcolor{c_Matlab}{MATLAB}.
@@ -647,10 +664,10 @@
         % - Over 3 years of experience in modular video game \& software design
 
       \item
-        Frameworks: Node.js, Express, Angular 2, Ionic, Qt Quick, Vue.js, PyTorch, OpenFL, Google Closure Library.
+        \textbf{Frameworks + Libraries}: Node.js, Express, Angular 2, Ionic, Bootstrap, Qt Quick, Vue.js, PyTorch, OpenFL, Google Closure.
 
       \item
-        Tools: Linux, Vim, Emacs, Git, Qt Creator, Photoshop, Flash Professional, Unity3D, Microsoft Office.
+        \textbf{Tools + Software}: Linux, Vim, Emacs, Git, Eclipse, Photoshop, Flash Professional, Unity3D, Microsoft Office.
 
         % - Version Control: {Git}
 
@@ -663,156 +680,84 @@
 	}
 	% \section{Accomplishments}
 	% \section{Work Related Experiences}
-	\section{Personal Projects}
-	{
-	\setlength\multicolsep{0pt}
-	\begin{multicols}{2}
-		\begin{itemize}
-			% TODO add a link here
-			\item  \dateditem{\textbf{Time Management App}}{2017 - present}
-				\\
-			\dtext{
-				- Implemented rigorous time-management hybrid app using \textcolor{c_HTML}{HTML}, \textcolor{c_CSS}{CSS}, \textcolor{c_TypeScript}{TypeScript}, Angular 2 and Ionic, with automatic scheduling and reward system.
-				\\
-				- Designed greedy algorithm to achieve real-time planning up to 365 days into the future
-			}
-			
-			% - \dateditem{ \textbf{Life++}\nopaper{(\link{Link}{https://github.com/TommyX12/lpp})}{}}{2016 - present}
-				% \\
-			% \dtext{
-				% - Implemented rigorous time-management solution in \textcolor{c_cpp}{C++}, \textcolor{c_QML}{QML} with automatic scheduling
-				% \\
-				% - Designed greedy algorithm to achieve real-time planning up to 365 days into the future
-			% }
-
-			%% \item  \dateditem{ \textbf{Block Buster}\nopaper{(\link{Link}{https://itunes.apple.com/us/app/id1071095727})}{}}{2015}
-			%% \\
-			%% \dtext{
-			%% 	- Developed cross-platform side-scrolling arcade game in \textcolor{c_ActionScript}{ActionScript 3.0} using Adobe AIR during high school
-			%% 	\\
-			%% 	- 400 plays in 1 month on high school arcade machine
-			%% }
-
-			\item  \dateditem{ \textbf{Neuro-evolution Demo}\nopaper{(\link{Link}{https://github.com/TommyX12/Neuroevolution-test})}{}}{2016}
-			\\
-			\dtext{
-				- Implemented neural network with evolutionary algorithm in \textcolor{c_cpp}{C++} using SFML framework during high school
-				\\
-				- Successfully trained simulated ants to seek food by learning
-			}
-
-			\vfill\null
-			\columnbreak
-
-			\item  \dateditem{ \textbf{TensorBuilder}\nopaper{(\link{Link}{https://github.com/TommyX12/tensorbuilder})}{}}{2017}
-				\\
-			\dtext{
-				- Implemented a GUI editor for TensorFlow\texttrademark \,
-				  in \textcolor{c_QML}{QML} and \textcolor{c_JavaScript}{JavaScript} using Qt
-				% \\
-				% - Written graph-to-python compiler for easy execution
-			}
-
-			\item  \dateditem{ \textbf{Cellular}\nopaper{(\link{Link}{https://drive.google.com/file/d/0Bxp0NufEQ_YkTEVNTkJadG9IYVk/view?usp=sharing})}{}}{2015 - present}
-			\\
-			\dtext{
-				% - Procedural 2D action/adventure/strategy game with AAA post-processing shaders
-				- Designed and developed procedural 2D action / adventure game in Unity \textcolor{c_C_Sharp}{C\#} and \textcolor{c_Haxe}{Haxe}
-				\\
-				- Implemented procedural generation as well as culling algorithm to support seamless map with 65536+ tiles
-				\\
-				- 1st place in UofT Game-Making Deathmatch 2017
-			}
-			
-			% - \dateditem{ HackSandbox.com\nopaper{(\link{Link}{http://hacksandbox.com})}{}}{2017}
-				% \\
-			% \dtext{
-				% - Website for easy game creation and sharing.
-				% \\
-				% - Role: game engine developer, sample game creator
-				% \\
-				% - Language: \textcolor{c_Java}{Java}
-			% }
-
-			% - \dateditem{ \textbf{Up from the Ground}\nopaper{(\link{Link}{http://steamcommunity.com/sharedfiles/filedetails/?id=341346116})}{}}{2013 - 2015}
-			% \\
-			% \dtext{
-				% - Designed and developed 2D action / adventure space shooter game in \textcolor{c_ActionScript}{ActionScript 3.0} during high school
-				% \\
-				% - Written high-standard post-processing shaders
-			% }
-		\end{itemize}
-	\end{multicols}
-	}
-	
 	\vspace{10pt}
 	{
 	\footnotesize
 	\setlength\multicolsep{0pt}
 	\begin{multicols}{2}
-		\section{Awards and Contributions}
-		\begin{itemize}
-			\item  \dateditem{1st Place - Bloomberg Codecon UofT}{2017}
-			\item  \dateditem{2nd Place - Microsoft Code Competition UofT}{2017}
-			\\
-			\dtext{
-				- Solved one of the hardest problem
-			}
+        \setlength{\columnseprule}{0.2pt}
+        \section{Personal Projects}
+        {
+        \begin{itemize}
+            % TODO add a link here
+            \item  \techitem{\textbf{Time Management App}}{TypeScript, Angular 2}
+                \\
+            \dtext{
+                - Implemented rigorous time-management hybrid app using \textcolor{c_HTML}{HTML}, \textcolor{c_CSS}{CSS}, \textcolor{c_TypeScript}{TypeScript}, Angular 2 and Ionic, with automatic scheduling and reward system.
+                \\
+                - Designed greedy algorithm to achieve real-time planning up to 365 days into the future
+            }
 
-			\item  \dateditem{2nd Best Accuracy - (National) USC Competition}{2017}
-			\\
-			\dtext{
-				% - Contribution: a geo-locator tool developed on-the-spot
-				- Developed geo-locator tool for drone mission
-			}
+            % - \dateditem{ \textbf{Life++}\nopaper{(\link{Link}{https://github.com/TommyX12/lpp})}{}}{2016 - Present}
+                % \\
+            % \dtext{
+                % - Implemented rigorous time-management solution in \textcolor{c_cpp}{C++}, \textcolor{c_QML}{QML} with automatic scheduling
+                % \\
+                % - Designed greedy algorithm to achieve real-time planning up to 365 days into the future
+            % }
 
-			\item  \dateditem{1st Overall - UofT Game-Making Deathmatch}{2017}
-			\\
-			\dtext{
-				- Best Technical Achievement Award
-				\\
-				- Judges recommended commercial release
-			}
+            %% \item  \dateditem{ \textbf{Block Buster}\nopaper{(\link{Link}{https://itunes.apple.com/us/app/id1071095727})}{}}{2015}
+            %% \\
+            %% \dtext{
+            %% 	- Developed cross-platform side-scrolling arcade game in \textcolor{c_ActionScript}{ActionScript 3.0} using Adobe AIR during high school
+            %% 	\\
+            %% 	- 400 plays in 1 month on high school arcade machine
+            %% }
+            \item  \techitem{ \textbf{TensorBuilder}\nopaper{(\link{Link}{https://github.com/TommyX12/tensorbuilder})}{}}{QML, JavaScript}
+                \\
+            \dtext{
+                - Implemented a GUI editor for TensorFlow\texttrademark \,
+                in \textcolor{c_QML}{QML} and \textcolor{c_JavaScript}{JavaScript} using Qt
+                % \\
+                % - Written graph-to-python compiler for easy execution
+            }
+            \item  \techitem{ \textbf{Neuro-evolution Demo}\nopaper{(\link{Link}{https://github.com/TommyX12/Neuroevolution-test})}{}}{C++}
+            \\
+            \dtext{
+                - Implemented neural network with evolutionary algorithm in \textcolor{c_cpp}{C++} using SFML framework during high school
+                \\
+                - Successfully trained simulated ants to seek food by learning
+            }
+            \item  \techitem{ \textbf{Procedural Game}\nopaper{(\link{Link}{https://drive.google.com/file/d/0Bxp0NufEQ_YkTEVNTkJadG9IYVk/view?usp=sharing})}{}}{Unity, C\#}
+            \\
+            \dtext{
+                % - Procedural 2D action/adventure/strategy game with AAA post-processing shaders
+                - Designed and developed procedural-generated 2D action / adventure game in Unity \textcolor{c_C_Sharp}{C\#} and \textcolor{c_Haxe}{Haxe}
+                \\
+                - Implemented procedural generation as well as culling algorithm to support seamless map with 60000+ tiles
+                \\
+                - 1st place in UofT Game-Making Deathmatch 2017
+            }
 
-			% - \dateditem{3rd Place - UTRA Sumo Robot Competition}{2017}
+            % - \dateditem{ HackSandbox.com\nopaper{(\link{Link}{http://hacksandbox.com})}{}}{2017}
+                % \\
+            % \dtext{
+                % - Website for easy game creation and sharing.
+                % \\
+                % - Role: game engine developer, sample game creator
+                % \\
+                % - Language: \textcolor{c_Java}{Java}
+            % }
 
-			\item  \dateditem{ Silver Medalist - \\ (National) Canadian Computing Olympiad\nopaper{(\link{Link}{http://cemc.uwaterloo.ca/contests/past_contests/CCOResults.pdf})}{}}{2016}
-
-			%% \item  \dateditem{Silver Division Winner - DMCI Programming Gala}{2016}
-
-			\item  \dateditem{3rd Place - Big Data Challenge}{2016}
-			\\
-			\dtext{
-				-  Journal Published on STEM Fellowship
-				% - Project: Relevance of Emergency Requests and Emergency Station Placement
-				% \\
-				% - Role: team leader, programmer; Language: \textcolor{c_Python}{Python}
-			}
-
-			%% \item  \dateditem{School Champion -\\Canadian Open Mathematics Challenge}{2015 - 2016}
-
-			%% \item  \dateditem{Gold Medalist - Toronto Science Fair}{2015}
-			% \\
-			% \dtext{
-				% - Project: Ultrasonic Mapping System
-				% \\
-				% - Role: designer, programmer; Language: \textcolor{c_Java}{Java}(Processing), \textcolor{c_cpp}{C++}(Arduino)
-			% }
-
-			% - \dateditem{School Champion - Canadian Computing Competition Senior Division}{2015}
-		%% \end{itemize}
-		%% \subsection{Clubs}
-		%% \begin{itemize}
-			\item  \dateditem{Vision Subdivision Lead of\\University of Toronto Aerospace Team:\\Aerial Robotics division}{2016 - present}
-
-			\item  \dateditem{Co-President of \\ Game Design and Development Club}{2016 - present}
-
-			%% \item  \dateditem{University of Toronto Robotics Association}{2016}
-
-			%% \item  \dateditem{Founder and instructor of YMCI Game Dev Club}{2015}
-
-			%% \item  \dateditem{Lead instructor of YMCI Programming Club}{2014 - 2016}
-		\end{itemize}
+            % - \dateditem{ \textbf{Up from the Ground}\nopaper{(\link{Link}{http://steamcommunity.com/sharedfiles/filedetails/?id=341346116})}{}}{2013 - 2015}
+            % \\
+            % \dtext{
+                % - Designed and developed 2D action / adventure space shooter game in \textcolor{c_ActionScript}{ActionScript 3.0} during high school
+                % \\
+                % - Written high-standard post-processing shaders
+            % }
+        \end{itemize}
+        }
 		
 		\vfill\null
 		\columnbreak
@@ -820,31 +765,117 @@
 		\section{Course Projects}
 		
 		\begin{itemize}
-			\item \dateditem{\textbf{Machine Translator}}{2018}
+			\item \techitem{\textbf{Reddit Political Persuasion Classifier}}{Python}
 				\\
 			\dtext{
-				- Written Python application to translate text across different languages, using smoothed n-gram model
+				- Trained \textcolor{c_Python}{Python} program to study political affiliation of comments on Reddit
+				\\
+				- Pre-processed and tokenized the data, manually extracted features, trained multiple classifiers using \textcolor{c_Python}{scikit-learn}
+			}
+			\item  \techitem{ \textbf{ShareSchedule}\nopaper{(\link{Link}{https://shareschedule.herokuapp.com})}{}}{Node.js + Express, PostgreSQL}
+				\\
+			\dtext{
+				- Developed vanilla JS website with Node.js + Express and PostgreSQL, with RESTful API
+                \\
+                - Interface with UofT API, intelligently plan time tables for UofT students, with Facebook login and schedule sharing
+                \\
+				- Written backtracking algorithm in \textcolor{c_JavaScript}{JavaScript} to automatically solve for conflict-free schedules
+			}
+			\item \techitem{\textbf{Machine Translator}}{Python}
+				\\
+			\dtext{
+				- Written \textcolor{c_Python}{Python} application to translate text across different languages, using smoothed n-gram model
 				\\
 				- Applied IBM-1 alignment model, evaluates with BLEU
 			}
-			\item \dateditem{\textbf{Emoji Style-Transfer}}{2018}
+			\item \techitem{\textbf{Emoji Style-Transfer}}{Python, PyTorch}
 				\\
 			\dtext{
 				- Implemented CycleGAN, a Deep Convolutional Generative Adversarial Network (DCGAN) in \textcolor{c_Python}{PyTorch}
 				\\
-				- Performs unpaired style-transfer between Windows and iOS emoji.
-			}
-			\item  \dateditem{ \textbf{ShareSchedule}\nopaper{(\link{Link}{https://shareschedule.herokuapp.com})}{}}{2017}
-				\\
-			\dtext{
-				- Developed vanilla JS website allowing intelligent time table planning for UofT students, with the ability to see Facebook friends' schedules
-				\\
-				- Written RESTful API backend and backtracking algorithm in \textcolor{c_JavaScript}{JavaScript} to automatically solve for conflict-free schedules
+				- Generates iOS-style emoji from/to Windows-style emoji
 			}
 		\end{itemize}
 	\end{multicols}
 			
 	}
+
+    \section{Awards and Contributions}
+    {
+	\setlength\multicolsep{0pt}
+    \footnotesize
+	\begin{multicols}{2}
+    \begin{itemize}
+        \item  \dateditem{1st Place - Bloomberg Codecon UofT}{2017}
+        \item  \dateditem{2nd Place - Microsoft Code Competition UofT}{2017}
+        \\
+        \dtext{
+            - Solved one of the hardest problem
+        }
+
+        \item  \dateditem{2nd Best Accuracy - (National) USC Competition}{2017}
+        \\
+        \dtext{
+            % - Contribution: a geo-locator tool developed on-the-spot
+            - Developed geo-tagging tool for drone mission
+        }
+
+        % - \dateditem{3rd Place - UTRA Sumo Robot Competition}{2017}
+
+        \item  \dateditem{ Silver Medalist - \\ (National) Canadian Computing Olympiad\nopaper{(\link{Link}{http://cemc.uwaterloo.ca/contests/past_contests/CCOResults.pdf})}{}}{2016}
+
+        \item  \dateditem{Co-President of \\ Game Design and Development Club}{2017 - 2018}
+
+        \item  \dateditem{1st - UofT Game-Making Deathmatch}{2017}
+        \\
+        \dtext{
+            - Best Overall and Best Technical Achievement Award
+            \\
+            - Judges recommended commercial release
+        }
+
+        %% \item  \dateditem{Silver Division Winner - DMCI Programming Gala}{2016}
+
+        \item  \dateditem{3rd Place - Big Data Challenge}{2016}
+        \\
+        \dtext{
+            -  Analyzed and visualized open data using \textcolor{c_Python}{Python}
+            \\
+            - Journal Published on STEM Fellowship\nopaper{(\link{Link}{http://journal.stemfellowship.org/doi/abs/10.17975/sfj-2016-006})}{}
+            % - Project: Relevance of Emergency Requests and Emergency Station Placement
+            % \\
+            % - Role: team leader, programmer; Language: \textcolor{c_Python}{Python}
+        }
+
+        %% \item  \dateditem{School Champion -\\Canadian Open Mathematics Challenge}{2015 - 2016}
+
+        %% \item  \dateditem{Gold Medalist - Toronto Science Fair}{2015}
+        % \\
+        % \dtext{
+            % - Project: Ultrasonic Mapping System
+            % \\
+            % - Role: designer, programmer; Language: \textcolor{c_Java}{Java}(Processing), \textcolor{c_cpp}{C++}(Arduino)
+        % }
+
+        % - \dateditem{School Champion - Canadian Computing Competition Senior Division}{2015}
+    %% \end{itemize}
+    %% \subsection{Clubs}
+    %% \begin{itemize}
+        \item  \dateditem{Vision Subdivision Lead of\\University of Toronto Aerospace Team:\\Aerial Robotics division}{2017 - 2018}
+
+        %% \item Numerous contributions to open source projects
+        %% \\
+        %% \dtext{- Projects: OpenFL, Starling}
+
+        %% \item  \dateditem{University of Toronto Robotics Association}{2016}
+
+        %% \item  \dateditem{Founder and instructor of YMCI Game Dev Club}{2015}
+
+        %% \item  \dateditem{Lead instructor of YMCI Programming Club}{2014 - 2016}
+    \end{itemize}
+	\end{multicols}
+    }
+	
 }
 
 % http://www.tug.dk/FontCatalogue/seriffonts.html
