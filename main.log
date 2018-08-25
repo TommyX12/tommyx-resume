@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6630 64-bit) (preloaded format=xelatex 2018.7.28)  29 JUL 2018 19:26
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6630 64-bit) (preloaded format=xelatex 2018.7.28)  7 AUG 2018 22:41
 entering extended mode
 **./main.tex
 (main.tex
@@ -783,31 +783,31 @@ tly
 )
 \Hy@SectionHShift=\skip56
 )
-\g__fontspec_family_Verdana_int=\count279
+\g__fontspec_family_Arial_int=\count279
 .................................................
 . fontspec info: "defining-font"
 . 
-. Font family 'Verdana(0)' created for font 'Verdana' with options
+. Font family 'Arial(0)' created for font 'Arial' with options
 . [Ligatures=TeX].
 .  
 .  This font family consists of the following NFSS series/shapes:
 .  
 . - 'normal' (m/n) with NFSS spec.:
-. <->"Verdana/OT:script=latn;language=DFLT;mapping=tex-text;"
+. <->"Arial/OT:script=latn;language=DFLT;mapping=tex-text;"
 . - 'small caps'  (m/sc) with NFSS spec.:
-. <->"Verdana/OT:script=latn;language=DFLT;+smcp;mapping=tex-text;"
+. <->"Arial/OT:script=latn;language=DFLT;+smcp;mapping=tex-text;"
 . - 'bold' (bx/n) with NFSS spec.:
-. <->"Verdana/B/OT:script=latn;language=DFLT;mapping=tex-text;"
+. <->"Arial/B/OT:script=latn;language=DFLT;mapping=tex-text;"
 . - 'bold small caps'  (bx/sc) with NFSS spec.:
-. <->"Verdana/B/OT:script=latn;language=DFLT;+smcp;mapping=tex-text;"
+. <->"Arial/B/OT:script=latn;language=DFLT;+smcp;mapping=tex-text;"
 . - 'italic' (m/it) with NFSS spec.:
-. <->"Verdana/I/OT:script=latn;language=DFLT;mapping=tex-text;"
+. <->"Arial/I/OT:script=latn;language=DFLT;mapping=tex-text;"
 . - 'italic small caps'  (m/itsc) with NFSS spec.:
-. <->"Verdana/I/OT:script=latn;language=DFLT;+smcp;mapping=tex-text;"
+. <->"Arial/I/OT:script=latn;language=DFLT;+smcp;mapping=tex-text;"
 . - 'bold italic' (bx/it) with NFSS spec.:
-. <->"Verdana/BI/OT:script=latn;language=DFLT;mapping=tex-text;"
+. <->"Arial/BI/OT:script=latn;language=DFLT;mapping=tex-text;"
 . - 'bold italic small caps'  (bx/itsc) with NFSS spec.:
-. <->"Verdana/BI/OT:script=latn;language=DFLT;+smcp;mapping=tex-text;"
+. <->"Arial/BI/OT:script=latn;language=DFLT;+smcp;mapping=tex-text;"
 .................................................
 LaTeX Info: Redefining \rmfamily on input line 18.
 )
@@ -872,27 +872,25 @@ LaTeX Font Info:    Redeclaring symbol font `operators' on input line 7.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
 (Font)              `operators' in the math version `normal' on input line 7.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/Verdana(0)/m/n on input line 7.
+(Font)                  OT1/cmr/m/n --> TU/Arial(0)/m/n on input line 7.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
 (Font)              `operators' in the math version `bold' on input line 7.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/Verdana(0)/m/n on input line 7.
+(Font)                  OT1/cmr/bx/n --> TU/Arial(0)/m/n on input line 7.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/Verdana(0)/m/n --> TU/Verdana(0)/m/n on input line 7
-.
+(Font)                  TU/Arial(0)/m/n --> TU/Arial(0)/m/n on input line 7.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/Verdana(0)/m/it on input line 7.
+(Font)                  OT1/cmr/m/it --> TU/Arial(0)/m/it on input line 7.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/Verdana(0)/bx/n on input line 7.
+(Font)                  OT1/cmr/bx/n --> TU/Arial(0)/bx/n on input line 7.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
 (Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 7.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
 (Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 7.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/Verdana(0)/m/n --> TU/Verdana(0)/bx/n on input line 
-7.
+(Font)                  TU/Arial(0)/m/n --> TU/Arial(0)/bx/n on input line 7.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/Verdana(0)/bx/it on input line 7.
+(Font)                  OT1/cmr/bx/it --> TU/Arial(0)/bx/it on input line 7.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 7.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
@@ -973,11 +971,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 10.
  ) 
 Here is how much of TeX's memory you used:
  20174 strings out of 427836
- 378927 string characters out of 3152479
- 499683 words of memory out of 3000000
+ 378803 string characters out of 3152479
+ 501590 words of memory out of 3000000
  24009 multiletter control sequences out of 15000+200000
  536098 words of font info for 66 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
- 41i,9n,66p,10429b,454s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,9n,66p,10429b,420s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on main.pdf (1 page).

@@ -14,12 +14,12 @@
 \usepackage{hyperref}
 
 
-\setmainfont{Verdana} 
+\setmainfont{Arial} 
 
 \definecolor{c_cyan}{RGB}{63, 127, 255}
 \definecolor{c_blue}{RGB}{31, 63, 255}
 \definecolor{c_dark_blue}{RGB}{31, 63, 128}
-\definecolor{c_grey}{RGB}{50, 50, 50}
+\definecolor{c_grey}{RGB}{25, 25, 25}
 \definecolor{c_Ren'Py}{RGB}{0, 0, 0}
 \definecolor{c_C}{RGB}{0, 0, 0}
 \definecolor{c_OpenGL}{RGB}{0, 0, 0}
@@ -463,15 +463,15 @@
 	{\textcolor{c_grey}{#1} {\large\textperiodcentered} \textcolor{c_grey}{#2} {\large\textperiodcentered} \textcolor{c_grey}{#3}}
 }
 
-\titlespacing*{\section}
-{0pt}{5pt}{5pt}
+\titlespacing*{\section} % \titlespacing{command}{left spacing}{before spacing}{after spacing}[right]
+{0pt}{0pt}{4pt}
 \titlespacing*{\subsection}
-{0pt}{3pt}{3pt}
+{0pt}{0pt}{3pt}
 
 \titleformat{\section}          % Customise the \section command 
 	{\Large\scshape\raggedright} % Make the \section headers large (\Large),
 								 % small capitals (\scshape) and left aligned (\raggedright)	
-	{\textcolor{c_cyan}{|}}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
+	{\textcolor{c_cyan}{| }}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
 	{}                           % Can be used to insert code before the heading	
 	[\titlerule]                 % Inserts a horizontal line after the heading
 
@@ -495,7 +495,7 @@
 }
 
 \newcommand{\techitem}[2]{%
-	{#1 \hfill #2}%
+	{#1 \hfill \textbf{\footnotesize #2}}%
 }
 
 \newcommand{\dtext}[1]{
@@ -562,12 +562,12 @@
 	\setlength\multicolsep{0pt}
 	\vspace{2pt}
     \begin{itemize}
-        \item  \dateditem{\textbf{Google LLC}, \textit{Software Engineering Intern, Google Docs Team}}{2018 Summer}
+        \item  \dateditem{\textbf{Google LLC}, \textit{Software Engineering Intern}, Google Docs Team}{2018 Summer}
         \\
         \dtext{
-            - Implemented MVC structured, accessibility-friendly user interface for layout formatting for Google Docs Android
+            - Implemented MVC structured, accessibility-friendly user interface for layout formatting on Google Docs Android
             \\
-            - Discovered and proposed solution for flaws in code base vulnerable to potentially significant decrease in typing performance
+            - Discovered and proposed solution for flaws in code base that will potentially cause 30\% increase in typing latency
             \\
             - Released completed feature to Google Docs Android, reaching over 100 million users
             \\
@@ -592,36 +592,27 @@
 	% \datedsubsection{University of Toronto St.George Campus}{2016 - Present}
 	\datedsubsection{University of Toronto, Honors B.Sc, Computer Science Specialist}{Class of 2020}
 	\begin{itemize}
+        \setlength\itemsep{0pt}
 		% - Enrolled in Computer Science Specialist Program - Undergraduate
 		% - Fast-Tracking - Earlier Expected Graduation Date: April 2019
 		% - SGPA: 4.0, CGPA: 3.97
-        \item Dean's List Scholar, President's Entrance Scholarship
-		{
-		\footnotesize
-		\setlength\multicolsep{3pt}
-		\begin{multicols}{2}
-            \item  Finished Courses - \textbf{GPA: 3.97}:
-            \\
-			- Enriched Introduction to the Theory of Computation
-            \\
-			\dtext{\,\,\,\,- Class Average: 70, Final Mark: 98}
-			\\
-            - Neural Networks and Machine Learning
-			\\
-			% - Software Design
-            - Natural Language Computing 
-            \item  Current Courses:
-            \\
-            - Introduction to Visual Computing
-            \\
-            - Machine Learning and Data Mining
-            \\
-            - Computer Graphics
-            \\
-            - Statistics for Computer Scientists
-		\end{multicols}
-		}
-	\end{itemize}
+        \item \textbf{CGPA: 3.97}, Dean's List Scholar, President's Entrance Scholarship
+        {
+        \footnotesize
+        \item  Upper-level Courses:
+        \setlength\multicolsep{0pt}
+        \begin{multicols}{3}
+        \begin{itemize} \setlength\itemsep{0pt}
+            \item Neural Networks and Machine Learning
+            \item Algorithm Design \& Complexity
+            \item Software Engineering
+            \item Natural Language Computing 
+            \item Introduction to Visual Computing
+            \item Computer Graphics
+        \end{itemize}
+        \end{multicols}
+        }
+    \end{itemize}
 	% \datedsubsection{York Mills Collegiate Institute}{2013 - 2016}
 	% SP LIST(spacing = None)
 		% - Graduated with a 95\% average
@@ -632,7 +623,6 @@
 
 	\section{Skills}
 	{
-    \footnotesize
     \begin{itemize} \setlength\itemsep{0pt}
     \item
         \textbf{Languages}:
@@ -682,7 +672,6 @@
 	% \section{Work Related Experiences}
 	\vspace{10pt}
 	{
-	\footnotesize
 	\setlength\multicolsep{0pt}
 	\begin{multicols}{2}
         \setlength{\columnseprule}{0.2pt}
@@ -717,9 +706,9 @@
                 \\
             \dtext{
                 - Implemented a GUI editor for TensorFlow\texttrademark \,
-                in \textcolor{c_QML}{QML} and \textcolor{c_JavaScript}{JavaScript} using Qt
-                % \\
-                % - Written graph-to-python compiler for easy execution
+                in \textcolor{c_QML}{QML} and \textcolor{c_JavaScript}{JavaScript} using Qt, with intuitive drag-and-connect interface
+                \\
+                - Compiles the graph directly to Python for execution
             }
             \item  \techitem{ \textbf{Neuro-evolution Demo}\nopaper{(\link{Link}{https://github.com/TommyX12/Neuroevolution-test})}{}}{C++}
             \\
@@ -779,7 +768,7 @@
                 \\
                 - Interface with UofT API, intelligently plan time tables for UofT students, with Facebook login and schedule sharing
                 \\
-				- Written backtracking algorithm in \textcolor{c_JavaScript}{JavaScript} to automatically solve for conflict-free schedules
+				- Uses backtracking algorithm to solve for conflict-free schedules
 			}
 			\item \techitem{\textbf{Machine Translator}}{Python}
 				\\
@@ -806,6 +795,7 @@
     \footnotesize
 	\begin{multicols}{2}
     \begin{itemize}
+        \setlength\itemsep{0pt}
         \item  \dateditem{1st Place - Bloomberg Codecon UofT}{2017}
         \item  \dateditem{2nd Place - Microsoft Code Competition UofT}{2017}
         \\
