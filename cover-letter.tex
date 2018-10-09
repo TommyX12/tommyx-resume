@@ -1,0 +1,55 @@
+% !TeX program = xelatex 
+
+\usepackage[left=1.25in, right=1.25in, top=1.25in, bottom=1.25in]{geometry}
+
+\setlength\parindent{0pt} % no first-line indent
+\pagenumbering{gobble} % no page numbering
+
+\newcommand{\yearofstudy}[0]{3rd year}
+\newcommand{\program}[0]{Computer Science}
+\newcommand{\school}[0]{the University of Toronto}
+\newcommand{\shortexperience}[0]{6+ years of experience in software design, development and engineering, and a deep passion for innovation and problem solving}
+
+\newcommand{\companyname}[0]{\textbf{company}}
+\newcommand{\positionname}[0]{\textbf{position}}
+\newcommand{\interestmatch}[0]{\textbf{interestmatch}}
+\newcommand{\skillsmatch}[0]{
+	\begin{itemize}
+	\item Proficiency in numerous programming languages, tools and frameworks including but not limited to C/C++, Python, Java, PyTorch, Node.js, which would help designing and implementing software solutions and models;
+	\item Practical experience with algorithm optimization (for my C++ automatic time management software), which would help optimizing the efficiency of algorithms;
+	\item Industry experience with software engineering methods and best practices, which would help integrating the solutions into the main software stack;
+	\end{itemize}
+}
+\newcommand{\recipient}[0]{\companyname}
+
+\newcommand{\coverletter}[0]{
+	Dear \recipient{},
+	\\\\
+% - (down to business) use one sentence to state your purpose (don't introduce self first)
+%   includes company, position & role.
+% - sum up your strengths matching the requirements
+%   emphasize what you can offer, not what you can get.
+%   existing skills, motivations, potentials.
+	I am writing to apply for \positionname{} at \companyname{}. I am a \yearofstudy{} \program{} student studying at \school{}, with \shortexperience{} to offer for the company.
+	\\\\
+% - interest match
+%   elaborate why there's a match between your career motive and the business of the company
+%   explain why the company interests you.
+	\interestmatch
+	\\\\
+% - skills & experience match
+	I have the following skills that would make me suitable for the position at \companyname{}:
+
+	\skillsmatch{}~
+
+%   list required skills & experience -> your skills & experience.
+% - conclusion
+%   wrap up, ask for meeting / interview, say thank you.
+	I am delighted to be considered for this opportunity, and I look forward to contributing my talent and experience to \companyname{}. Please feel free to schedule meetings or interview with me to discuss in detail. Thank you for your time.
+	\\\\
+	\\
+	\\
+	Sincerely,
+	\\\\
+	Ze Ming (Tommy) Xiang
+}
