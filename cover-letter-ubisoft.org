@@ -1,0 +1,22 @@
+laura.lempiainen@ubisoft.com
+
+
+Dear Laura,
+
+I am writing to apply for the PEY internship position (in 2019) at Ubisoft Toronto (referred by my friend Ian Wang, who recently received offer from Ubisoft). I am a 3rd-year Computer Science student studying at the University of Toronto, with 6+ years of experience in design, development, and engineering for software and video games, and a deep passion for gameplay, graphics, effects, and game engine development.
+
+Game design and development has been the one and only reason that drove me into learning programming, thanks to my childhood passion for video gaming and logical creativity. And Ubisoft has played an irreplaceable part in my journey. I have played and loved numerous Ubisoft titles, including but not limited to Far Cry, Watch Dogs, and Splinter Cell. Hence, it is my dream to apply my talent and experience in the field that I love the most.
+
+I have the following skills and experience that would make me suitable for the position at Ubisoft:
+- Industrial experience with software engineering methods and best practices from my internship at Google, where I developed and deployed a complete Google Docs feature to production, including design documentation and planning.
+- Proficiency in numerous programming languages, tools and frameworks including but not limited to C/C++, C# (and Unity), Python, Java, JavaScript (and Phaser.js engine), which would help to implement game-related software solutions;
+- I have a variety of game-related side projects, including multiple desktop, web, and cross-platform games, both hand-designed and procedurally generated, as well as game engines with industry-grade real-time post-processing shaders (such as lens-flare, god-ray, motion-blur), and last but not least a web platform for making and sharing games, in which I wrote the engine/framework for;
+- I was the co-president of the UofT Game Design and Development Club, and winner of the 1st-overall best game and technical achievement award in the annual Game-Making Deathmatch competition;
+
+I am delighted to be considered for this opportunity, and I look forward to contributing my talent and experience to Ubisoft. Please feel free to schedule meetings or interview with me to discuss in detail. Attached is my most recent resume. Thank you for your time.
+
+
+Sincerely,
+
+Tommy Xiang
+
