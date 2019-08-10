@@ -1,0 +1,93 @@
+\ProvidesPackage{resume-styles}
+
+\NeedsTeXFormat{LaTeX2e}
+
+\usepackage{titlesec}
+\usepackage{fontspec}
+\usepackage{color}
+\usepackage[left=0.5in, right=0.5in, top=0.5in, bottom=0.5in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{textcomp}
+\usepackage{hyperref}
+\usepackage{colors}
+
+
+\setmainfont{Arial}
+
+
+\definecolor{c_colrule}{RGB}{100, 100, 100}
+
+\def\labelitemi{\color{c_cyan}\textbullet}
+
+\pagenumbering{gobble}
+
+\renewcommand{\columnseprulecolor}{\color{c_colrule}}
+
+\newif\ifpaper
+
+\newcommand{\link}[2]{\href{#2}{\color{c_cyan}\bf\underline{#1}}}
+
+\newcommand{\nopaper}[2]{\ifpaper #2 \else #1 \fi}
+
+\newcommand{\sep}{{\color{c_dark_blue}|} }
+
+\newcommand{\headline}[1]{
+  {\LARGE\scshape{#1}}
+  \leavevmode
+}
+
+\newcommand{\address}[3]{
+  {\textcolor{c_grey}{#1} {\large\textperiodcentered} \textcolor{c_grey}{#2} {\large\textperiodcentered} \textcolor{c_grey}{#3}}
+}
+
+\titlespacing*{\section} % \titlespacing{command}{left spacing}{before spacing}{after spacing}[right]
+{0pt}{0pt}{4pt}
+\titlespacing*{\subsection}
+{0pt}{0pt}{3pt}
+
+\titleformat{\section}          % Customise the \section command
+{\Large\scshape\raggedright} % Make the \section headers large (\Large),
+% small capitals (\scshape) and left aligned (\raggedright)
+{\textcolor{c_cyan}{| }}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
+{}                           % Can be used to insert code before the heading
+[\titlerule]                 % Inserts a horizontal line after the heading
+
+\titleformat{\subsection}           % Customise the \subsection command
+{\bf\normalsize} % Make the \section headers large (\Large),
+% small capitals (\scshape) and left aligned (\raggedright)
+{{\color{c_dark_blue}- }}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
+{}                           % Can be used to insert code before the heading
+[]                 % Inserts a horizontal line after the heading
+
+\newcommand{\datedsection}[2]{%
+  \section[#1]{#1 \hfill \textcolor{c_dark_blue}{#2}}%
+}
+
+\newcommand{\datedsubsection}[2]{%
+  \subsection[#1]{#1 \hfill #2}%
+}
+
+\newcommand{\dateditem}[2]{%
+  {#1 \hfill #2}%
+}
+
+\newcommand{\techitem}[2]{%
+  {#1 \hfill \textbf{\footnotesize #2}}%
+}
+
+\newcommand{\dtext}[1]{
+  {\footnotesize\textcolor{c_grey}{#1}}
+}
+
+\newcommand{\qna}[2]{
+  {\normalsize #1}
+  \begin{itemize}
+  \item
+    #2
+  \end{itemize}
+}
+
+\renewcommand{\baselinestretch}{1.0}
