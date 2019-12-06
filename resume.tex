@@ -9,7 +9,7 @@
 {
   \normalsize
   \renewcommand{\arraystretch}{1.2}
-  \headline{Ze Ming ({\color{c_dark_blue}Tommy}) Xiang}
+  \raisebox{-0.5em}{\headline{Ze Ming ({\color{c_dark_blue}Tommy}) Xiang}}
 }
 {
   \color{c_grey}
@@ -17,175 +17,253 @@
   \renewcommand{\arraystretch}{1.1}
   \hfill
   \begin{tabular}{r}
-    \link{github.com/TommyX12}{https://github.com/TommyX12} \\
-    \address{30 Elkpath Ave}{Toronto}{ON M2L 2W1}\\
-    tommy.xiang@mail.utoronto.ca \sep (647)-968-4242 \\
+    \inlineimage{images/github.png}
+    \link{github.com/TommyX12}{https://github.com/TommyX12} \sep
+    \inlineimage{images/address.png}
+    % \address{30 Elkpath Ave}{Toronto}{ON M2L 2W1} \\
+    Toronto \textperiodcentered ON \\
+    \inlineimage{images/email.png}
+    tommy.xiang@mail.utoronto.ca \sep
+    \inlineimage{images/phone.png}
+    (647)-968-4242
   \end{tabular}
 }
 
-\section{Professional Experience}
+\vspace{1.0em}
+
+\mysection{Skills}
+{
+  \vspace{-0.3em}
+  \begin{center}
+    \begin{tabular*}{\textwidth}{ll @{\extracolsep{\fill}}}
+      \textbf{Languages}:
+      &
+        \textbf{Python},
+        \textbf{Java},
+        \textbf{JavaScript},
+        \textbf{C/C++},
+        \textbf{TypeScript},
+        HTML,
+        CSS,
+        C\#,
+        QML,
+        SQL,
+        Haxe,
+        Lua,
+        Verilog,
+        Bash,
+        Emacs Lisp.
+      \\[0.1em]
+      \textbf{Frameworks}:
+      &
+        \textbf{PyTorch}, \textbf{Angular 2}, Node.js Express, Ionic, React, Bazel, Vue.js, TensorFlow, OpenFL, Qt Quick.
+      \\[0.1em]
+      \textbf{Tools}:
+      &
+        Git, Perforce, Emacs, Vim, Linux, Unity3D, G-Suite, Microsoft Office.
+    \end{tabular*}
+  \end{center}
+  % \begin{itemize} \setlength\itemsep{0pt}
+  % \item
+  %   \textbf{Languages}:
+
+  % \item
+  %   \textbf{Frameworks}: 
+
+  % \item
+  %   \textbf{Tools}: 
+  % \end{itemize}
+}
+
+\vspace{-0.5em}
+\mysection{Education}
+\vspace{0.75em}
+\datedsubsection{~~\textbf{University of Toronto} | Computer Science Specialist | Honors Bachelor of Science}{\textbf{Class of 2021}}
+\vspace{0.2em}
+
+~~\textbf{CGPA: 3.98}/4.0, Dean's List Scholar every semester, President's Entrance Scholarship
+
+\vspace{0.35em}
+{
+  \begin{tabular*}{\textwidth}{c @{\extracolsep{\fill}} rrr}
+    \textbf{Upper-level Courses:}
+    & Neural Networks and Machine Learning & Algorithm Design \& Complexity & Software Engineering \\
+    & Natural Language Computing & Introduction to Visual Computing & Computer Graphics
+  \end{tabular*}
+  % \begin{multicols}{3}
+  %   \begin{itemize} \setlength\itemsep{0pt}
+  %   \item Neural Networks and Machine Learning
+  %   \item Algorithm Design \& Complexity
+  %   \item Software Engineering
+  %   \item Natural Language Computing
+  %   \item Introduction to Visual Computing
+  %   \item Computer Graphics
+  %   \end{itemize}
+  % \end{multicols}
+}
+
+\vspace{-0.5em}
+\mysection{Professional Experience}
 {
   \setlength\multicolsep{0pt}
-  \vspace{2pt}
+  \vspace{-0.2em}
   \begin{itemize}
-  \item  \dateditem{\textbf{Google LLC}, \textit{Software Engineering Intern}, Growth and Analytics}{2019 Summer}
+  \item  \dateditem{{\color{c_dark_blue}\textbf{NVIDIA}, \textit{\textbf{Deep Learning Research Intern}}, Toronto Artificial Intelligence Lab, supervised by \textbf{Sanja Fidler}}}{{\color{c_dark_blue}2019 Fall - Present}}
     \\
     \dtext{
-      - Implemented full-stack feature to allow administrators to display data quality alerts on internal business intelligence visualization tool
+      - Currently leading on-going research project for 3D asset generation from 2D images with minimal 3D supervision, using techniques including convolutional neural network, differentiable renderer, generative adversarial network, and Learned Perceptual Image Patch Similarity (LPIPS) loss  \\
+      - Achieved good qualitative results, including accurate inference of mesh shape and texture trained from \textit{nuScenes} dataset \\
+      % - Contributed to \textit{NVIDIA Kaolin},
+      % (\link{github.com/NVIDIAGameWorks/kaolin}{https://github.com/NVIDIAGameWorks/kaolin})
+      - Developed modularized implementation of state-of-the-art point cloud classifier and differentiable renderer for \textbf{NVIDIA Kaolin}, the PyTorch library for 3D Deep Learning research, which gained more than \textbf{1,000 stars} on GitHub within 10 days after launch, with co-authored \textbf{paper submitted} to \textit{arXiv} \\
+      % (\link{arXiv:1911.05063}{https://arxiv.org/abs/1911.05063})
+      - Technologies: \textbf{PyTorch, Python, CUDA, OpenCV, NVIDIA GPU Cloud, Docker, CNN, GAN}
+    }
+  \item  \dateditem{{\color{c_dark_blue}\textbf{Google LLC}, \textit{\textbf{Software Engineering Intern}}, Growth and Analytics}}{{\color{c_dark_blue}2019 Summer}}
+    \\
+    \dtext{
+      - Designed and implemented \textbf{full-stack} data quality alert system for internal intelligence visualization tool used by more than \textbf{30,000} Google employees
       \\
-      - Deployed feature into production and immediately used to show new data alerts on internal tool used by more than 30,000 Google employees
+      - Deployed into production and immediately used to notify users of critical data anomalies, saving significant cost from \textbf{25-35} data errors annually
       \\
-      - Designed and engineered anomaly detection system that automatically extracts and analyzes data points from frontend code
+      - Designed and engineered anomaly detection system capable of automatically extracting and analyzing data points directly from frontend code
       \\
       - Technologies: \textbf{TypeScript, HTML/CSS, Angular 2, Java, Node.js, Python}
     }
-  \item  \dateditem{\textbf{Google LLC}, \textit{Software Engineering Intern}, Google Docs Team}{2018 Summer}
+  \item  \dateditem{{\color{c_dark_blue}\textbf{Google LLC}, \textit{\textbf{Software Engineering Intern}}, Google Docs Team}}{{\color{c_dark_blue}2018 Summer}}
     \\
     \dtext{
-      - Implemented MVC structured, accessibility-friendly user interface for layout formatting on Google Docs Android
+      - Implemented \textbf{MVC structured}, accessibility-friendly user interface for layout formatting on Google Docs Android, reaching over \textbf{100 million users}
       \\
       - Discovered and proposed solution for flaws in code base that will potentially cause 30\% increase in typing latency
-      \\
-      - Released completed feature to Google Docs Android, reaching over 100 million users
       \\
       - Technologies: \textbf{JavaScript, Java + Android, Google Closure, Bazel}
     }
   \end{itemize}
 }
 
-\section{Education}
-\datedsubsection{University of Toronto, Honors B.Sc, Computer Science Specialist}{Class of 2021}
-\begin{itemize}
-  \setlength\itemsep{0pt}
-\item \textbf{CGPA: 3.98}/4.0, Dean's List Scholar, President's Entrance Scholarship
-  {
-    \footnotesize
-  \item  Upper-level Courses:
-    \setlength\multicolsep{0pt}
-    \begin{multicols}{3}
-      \begin{itemize} \setlength\itemsep{0pt}
-      \item Neural Networks and Machine Learning
-      \item Algorithm Design \& Complexity
-      \item Software Engineering
-      \item Natural Language Computing
-      \item Introduction to Visual Computing
-      \item Computer Graphics
-      \end{itemize}
-    \end{multicols}
-  }
-\end{itemize}
-
-\section{Skills}
 {
-  \begin{itemize} \setlength\itemsep{0pt}
-  \item
-    \textbf{Languages}:
-    Python,
-    Java,
-    JavaScript,
-    TypeScript,
-    HTML,
-    CSS,
-    C/C++,
-    C\#,
-    QML,
-    Haxe,
-    SQL,
-    Verilog,
-    Bash,
-    Emacs Lisp.
+  \vspace{-0.5em}
+  \setlength\multicolsep{0pt}
+  \mysection{Technical Projects}
+  % \vspace{1.0em}
+  % \begin{multicols}{2}
+  %   \setlength{\columnseprule}{0.2pt}
+  %   {
+  %   \begin{itemize}
+  %       %     TODO add a link here
+  %   \item  \techitem{\textbf{Time Management App}}{TypeScript, Angular 2}
+  %     \\
+  %     \dtext{
+  %     - Implemented rigorous time-management hybrid app using \textcolor{c_HTML}{HTML}, \textcolor{c_CSS}{CSS}, \textcolor{c_TypeScript}{TypeScript}, Angular 2 and Ionic, with automatic scheduling and reward system.
+  %     \\
+  %     - Designed greedy algorithm to achieve real-time planning up to 365 days into the future
+  %   }
+  %   \item \techitem{\textbf{Emacs Client for TabNine}\nopaper{(\link{Link}{https://github.com/TommyX12/company-tabnine})}{}}{Emacs Lisp}
+  %     \\
+  %     \dtext{
+  %     - Implemented Emacs completion backend for Jacob Jackson's machine learning code-completion system \textit{TabNine}
+  %     \\
+  %     - Received more than \textbf{325 stars} on GitHub, and more than \textbf{1671} downloads on Emacs package archive
+  %   }
+  %   \item  \techitem{ \textbf{Neuro-evolution Demo}\nopaper{(\link{Link}{https://github.com/TommyX12/Neuroevolution-test})}{}}{C++}
+  %     \\
+  %     \dtext{
+  %     - Implemented neural network with evolutionary algorithm in \textcolor{c_cpp}{C++} using SFML framework during high school
+  %     \\
+  %     - Successfully trained simulated ants to seek food by learning
+  %   }
+  %   \item \techitem{\textbf{Machine Translator}}{Python}
+  %     \\
+  %     \dtext{
+  %     - Written \textcolor{c_Python}{Python} application to translate text across different languages, using smoothed n-gram model
+  %     \\
+  %     - Applied IBM-1 alignment model, evaluates with BLEU
+  %   }
+  %   \end{itemize}
+  % }
 
-  \item
-    \textbf{Frameworks + Libraries}: Angular 2, Node.js Express, Ionic, React, Bazel, Vue.js, TensorFlow, PyTorch, OpenFL, Qt Quick.
+  %   \vfill\null
+  %   \columnbreak
 
-  \item
-    \textbf{Tools + Software}: Git, Emacs, Vim, Linux, Unity3D, Photoshop, Microsoft Office.
+  %   \begin{itemize}
+  %   \item \techitem{\textbf{Emoji Neural Style-Transfer}}{Python, PyTorch}
+  %     \\
+  %     \dtext{
+  %     - Implemented CycleGAN, a Deep Convolutional Generative Adversarial Network (DCGAN) in \textcolor{c_Python}{PyTorch}
+  %     \\
+  %     - Generates iOS-style emoji from/to Windows-style emoji
+  %   }
+  %   \item  \techitem{ \textbf{TensorBuilder}\nopaper{(\link{Link}{https://github.com/TommyX12/tensorbuilder})}{}}{QML, JavaScript}
+  %     \\
+  %     \dtext{
+  %     - Implemented a GUI editor for TensorFlow\texttrademark \,
+  %     in \textcolor{c_QML}{QML} and \textcolor{c_JavaScript}{JavaScript} using Qt, with intuitive drag-and-connect interface
+  %     \\
+  %     - Compiles the graph directly to Python for execution
+  %   }
+  %   \item  \techitem{ \textbf{ShareSchedule}\nopaper{(\link{Link}{https://shareschedule.herokuapp.com})}{}}{Node.js + Express, PostgreSQL}
+  %     \\
+  %     \dtext{
+  %     - Developed vanilla JS website with Node.js + Express and PostgreSQL, with RESTful API
+  %     \\
+  %     - Interface with UofT API, intelligently plan time tables for UofT students, with Facebook login and schedule sharing
+  %     \\
+  %     - Uses backtracking algorithm to solve for conflict-free schedules
+  %   }
+  %   \item  \techitem{ \textbf{Procedural Game}\nopaper{(\link{Link}{https://drive.google.com/file/d/0Bxp0NufEQ_YkTEVNTkJadG9IYVk/view?usp=sharing})}{}}{Unity, C\#}
+  %     \\
+  %     \dtext{
+  %     - Designed and developed procedural-generated 2D action / adventure game in Unity \textcolor{c_C_Sharp}{C\#} and \textcolor{c_Haxe}{Haxe}
+  %     \\
+  %     - Implemented procedural generation as well as culling algorithm to support seamless map with 60000+ tiles
+  %     \\
+  %     - 1st place in UofT Game-Making Deathmatch 2017
+  %   }
+  %   \end{itemize}
+  % \end{multicols}
+  \setlength{\columnseprule}{0.2pt}
+  \begin{itemize}
+  \item  \techitem{ \textbf{Cellular} \textit{2D Procedurally-Generated Game}}{C/C++, OpenGL, Lua, SDL 2, Cpp-Taskflow, Fruit, Entt}
+    \\
+    \dtext{
+      - Designed and developed procedurally-generated 2D action \& adventure game, achieved \textbf{1st place} in UofT Game-Making Deathmatch 2017
+      \\ - Implemented a high-performance, ECS-based, multi-threaded game engine in \textbf{C/C++} and \textbf{OpenGL}. Designed concurrent renderer with fully automatic sprite batching. Designed lock-free task graph system allowing near-maximum hardware utilization using topological sorting and RLF vertex coloring heuristic. Utilized template metaprogramming to auto-detect race-condition. Achieved simulation of up to \textbf{200000+} animated entities at \textbf{60fps}
+      \\ - Designed and implemented automatic dependency injection framework in embedded Lua. Implemented procedural map generation using diamond-square algorithm, Whittaker diagram, cellular automata, and random walk; Developed culling algorithm to support seamless \textbf{100000+ tiles} map
+    }
+  \item  \techitem{\textbf{Catalyzer} \textit{Hybrid App for Time Management}}{TypeScript, Angular 2, Ionic, HTML, CSS}
+    \\
+    \dtext{
+      - Implemented time-management hybrid app using \textbf{TypeScript}, leveraging \textbf{Angular 2} and Ionic, with automatic scheduling and reward system
+      \\ - Developed real-time constraint-based optimal schedule generation through ad-hoc greedy algorithms, tree-based ordered sets, and priority queues
+      \\ - Achieved generation of \textbf{365} days of future schedule with respect to \textbf{3000} constraints within \textbf{0.5s} on a mobile device
+    }
+  \item \techitem{\textbf{Emacs Client for TabNine} (\link{github.com/TommyX12/company-tabnine}{https://github.com/TommyX12/company-tabnine})}{Emacs Lisp}
+    \\
+    \dtext{
+      - Developed Emacs client for Jacob Jackson's code-completion system \textit{TabNine}, which displays intelligent and relevant completions using deep learning
+      \\
+      - Implemented low-latency sub-process communication for candidate fetching, achieving \textbf{5ms} overhead per keystroke
+      \\
+      - Received more than \textbf{331 stars} on GitHub, and more than \textbf{2198} downloads on Emacs package archive
+    }
+  \item  \techitem{ \textbf{ShareSchedule} \textit{Course Time-Table Generator}}{JavaScript, Node.js + Express, PostgreSQL}
+    \\
+    \dtext{
+      - Developed web application and RESTful API for UofT time-table generation using Node.js + Express and PostgreSQL
+      \\
+      - Implemented backtracking constraint-satisfaction algorithm on pure client-side JS to solve for conflict-free schedules with \textbf{<100ms} latency
+      \\
+      - Interface with Cobalt-UofT API to retrieve relevant course info, as well as using Facebook login to allow time-table sharing between students
+    }
   \end{itemize}
 }
+
+\mysection{Awards and Contributions}
+\vspace{0.5em}
 {
   \setlength\multicolsep{0pt}
-  \section{Projects}
-  \begin{multicols}{2}
-    \setlength{\columnseprule}{0.2pt}
-    {
-      \begin{itemize}
-        % TODO add a link here
-      \item  \techitem{\textbf{Time Management App}}{TypeScript, Angular 2}
-        \\
-        \dtext{
-          - Implemented rigorous time-management hybrid app using \textcolor{c_HTML}{HTML}, \textcolor{c_CSS}{CSS}, \textcolor{c_TypeScript}{TypeScript}, Angular 2 and Ionic, with automatic scheduling and reward system.
-          \\
-          - Designed greedy algorithm to achieve real-time planning up to 365 days into the future
-        }
-      \item \techitem{\textbf{Emacs Client for TabNine}\nopaper{(\link{Link}{https://github.com/TommyX12/company-tabnine})}{}}{Emacs Lisp}
-        \\
-        \dtext{
-          - Implemented Emacs completion backend for Jacob Jackson's machine learning code-completion system \textit{TabNine}
-          \\
-          - Received more than \textbf{240 stars} on GitHub, and more than \textbf{1200} downloads on Emacs package archive
-        }
-      \item  \techitem{ \textbf{Neuro-evolution Demo}\nopaper{(\link{Link}{https://github.com/TommyX12/Neuroevolution-test})}{}}{C++}
-        \\
-        \dtext{
-          - Implemented neural network with evolutionary algorithm in \textcolor{c_cpp}{C++} using SFML framework during high school
-          \\
-          - Successfully trained simulated ants to seek food by learning
-        }
-      \item \techitem{\textbf{Machine Translator}}{Python}
-        \\
-        \dtext{
-          - Written \textcolor{c_Python}{Python} application to translate text across different languages, using smoothed n-gram model
-          \\
-          - Applied IBM-1 alignment model, evaluates with BLEU
-        }
-      \end{itemize}
-    }
-
-    \vfill\null
-    \columnbreak
-
-    \begin{itemize}
-    \item \techitem{\textbf{Emoji Neural Style-Transfer}}{Python, PyTorch}
-      \\
-      \dtext{
-        - Implemented CycleGAN, a Deep Convolutional Generative Adversarial Network (DCGAN) in \textcolor{c_Python}{PyTorch}
-        \\
-        - Generates iOS-style emoji from/to Windows-style emoji
-      }
-    \item  \techitem{ \textbf{TensorBuilder}\nopaper{(\link{Link}{https://github.com/TommyX12/tensorbuilder})}{}}{QML, JavaScript}
-      \\
-      \dtext{
-        - Implemented a GUI editor for TensorFlow\texttrademark \,
-        in \textcolor{c_QML}{QML} and \textcolor{c_JavaScript}{JavaScript} using Qt, with intuitive drag-and-connect interface
-        \\
-        - Compiles the graph directly to Python for execution
-      }
-    \item  \techitem{ \textbf{ShareSchedule}\nopaper{(\link{Link}{https://shareschedule.herokuapp.com})}{}}{Node.js + Express, PostgreSQL}
-      \\
-      \dtext{
-        - Developed vanilla JS website with Node.js + Express and PostgreSQL, with RESTful API
-        \\
-        - Interface with UofT API, intelligently plan time tables for UofT students, with Facebook login and schedule sharing
-        \\
-        - Uses backtracking algorithm to solve for conflict-free schedules
-      }
-    \item  \techitem{ \textbf{Procedural Game}\nopaper{(\link{Link}{https://drive.google.com/file/d/0Bxp0NufEQ_YkTEVNTkJadG9IYVk/view?usp=sharing})}{}}{Unity, C\#}
-      \\
-      \dtext{
-        - Designed and developed procedural-generated 2D action / adventure game in Unity \textcolor{c_C_Sharp}{C\#} and \textcolor{c_Haxe}{Haxe}
-        \\
-        - Implemented procedural generation as well as culling algorithm to support seamless map with 60000+ tiles
-        \\
-        - 1st place in UofT Game-Making Deathmatch 2017
-      }
-    \end{itemize}
-  \end{multicols}
-
-}
-
-\section{Awards and Contributions}
-{
-  \setlength\multicolsep{0pt}
+  \vspace{2pt}
   \footnotesize
   \begin{multicols}{2}
     \begin{itemize}
@@ -203,7 +281,7 @@
         - Developed geo-tagging tool for drone mission
       }
 
-    \item  \dateditem{ Silver Medalist - \\ (National) Canadian Computing Olympiad\nopaper{(\link{Link}{http://cemc.uwaterloo.ca/contests/past_contests/CCOResults.pdf})}{}}{2016}
+    \item  \dateditem{ Silver Medalist - \\ (National) Canadian Computing Olympiad \nopaper{(\link{Link}{http://cemc.uwaterloo.ca/contests/past_contests/CCOResults.pdf})}{}}{2016}
 
     \item  \dateditem{Co-President of \\ Game Design and Development Club}{2017 - 2018}
 
@@ -211,8 +289,8 @@
       \\
       \dtext{
         - Best Overall and Best Technical Achievement Award
-        \\
-        - Judges recommended commercial release
+        % \\
+        % - Judges recommended commercial release
       }
 
     \item  \dateditem{3rd Place - Big Data Challenge}{2016}
@@ -220,7 +298,7 @@
       \dtext{
         -  Analyzed and visualized open data using \textcolor{c_Python}{Python}
         \\
-        - Journal Published on STEM Fellowship\nopaper{(\link{Link}{http://journal.stemfellowship.org/doi/abs/10.17975/sfj-2016-006})}{}
+        - Journal Published on STEM Fellowship \nopaper{(\link{Link}{http://journal.stemfellowship.org/doi/abs/10.17975/sfj-2016-006})}{}
       }
     \item  \dateditem{Vision Subdivision Lead of\\University of Toronto Aerospace Team:\\Aerial Robotics division}{2017 - 2018}
     \end{itemize}
