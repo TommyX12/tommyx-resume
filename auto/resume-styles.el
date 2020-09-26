@@ -3,16 +3,15 @@
  (lambda ()
    (TeX-add-to-alist 'LaTeX-provided-package-options
                      '(("geometry" "left=0.5in" "right=0.5in" "top=0.4in" "bottom=0.4in") ("hyperref" "hidelinks")))
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (TeX-run-style-hooks
     "titlesec"
-    "fontspec"
     "color"
     "geometry"
     "graphicx"
@@ -23,7 +22,8 @@
     "multicol"
     "textcomp"
     "hyperref"
-    "colors")
+    "colors"
+    "helvet")
    (TeX-add-symbols
     '("qna" 2)
     '("dtext" 1)
